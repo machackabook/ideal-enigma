@@ -1,0 +1,859 @@
+{
+  "schema": "uniomni.tdoc.discovery.v1",
+  "range": [
+    0,
+    10124
+  ],
+  "notice": "Public GitHub search snapshot, not complete coverage. Drive discovery counts are private and no Drive file URLs or names are published. Numeric links represent expected sequence, not verified executable dependencies.",
+  "github_search_total": 926,
+  "github_results_in_snapshot": 100,
+  "drive_search_accounts": [
+    {
+      "account": 0,
+      "returned": 100,
+      "success": true
+    },
+    {
+      "account": 1,
+      "returned": 17,
+      "success": true
+    },
+    {
+      "account": 2,
+      "returned": 7,
+      "success": true
+    },
+    {
+      "account": 3,
+      "returned": 4,
+      "success": true
+    },
+    {
+      "account": 4,
+      "returned": 1,
+      "success": true
+    },
+    {
+      "account": 5,
+      "returned": 44,
+      "success": true
+    },
+    {
+      "account": 6,
+      "returned": 0,
+      "success": true
+    },
+    {
+      "account": 7,
+      "returned": 0,
+      "success": true
+    },
+    {
+      "account": 8,
+      "returned": 0,
+      "success": true
+    }
+  ],
+  "records": [
+    {
+      "title": "TDOC-GOD-SOLARIS-CANON-v1.0.0.md",
+      "path": "docs/TDOC-GOD-SOLARIS-CANON-v1.0.0.md",
+      "repository": "machackabook/G.O.D.",
+      "url": "https://github.com/machackabook/G.O.D./blob/9493a98db19495221cdc9474838226544da80992/docs/TDOC-GOD-SOLARIS-CANON-v1.0.0.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "tdoc-gaia-sense-v2.sh",
+      "path": "layers/tdoc-gaia-sense-v2.sh",
+      "repository": "machackabook/ideal-enigma",
+      "url": "https://github.com/machackabook/ideal-enigma/blob/8c391e38fbb8da42be55fc4c846a61703e3d61c6/layers/tdoc-gaia-sense-v2.sh",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "remedy-tdoc-nexus-verify-v1.card",
+      "path": "remedy-tdoc-nexus-verify-v1.card",
+      "repository": "machackabook/NEXUS-SENTINEL-LEDGER",
+      "url": "https://github.com/machackabook/NEXUS-SENTINEL-LEDGER/blob/439d7bd9900d0d49dd06e58949a303efd50e8c5b/remedy-tdoc-nexus-verify-v1.card",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "remedy-tdoc-godmode-aimode-v5.card",
+      "path": "remedy-tdoc-godmode-aimode-v5.card",
+      "repository": "machackabook/NEXUS-SENTINEL-LEDGER",
+      "url": "https://github.com/machackabook/NEXUS-SENTINEL-LEDGER/blob/439d7bd9900d0d49dd06e58949a303efd50e8c5b/remedy-tdoc-godmode-aimode-v5.card",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "remedy-tdoc-tesseract-core-v9.card",
+      "path": "remedy-tdoc-tesseract-core-v9.card",
+      "repository": "machackabook/NEXUS-SENTINEL-LEDGER",
+      "url": "https://github.com/machackabook/NEXUS-SENTINEL-LEDGER/blob/439d7bd9900d0d49dd06e58949a303efd50e8c5b/remedy-tdoc-tesseract-core-v9.card",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "tdoc-gaia-cloud-mount-v3.sh",
+      "path": "layers/tdoc-gaia-cloud-mount-v3.sh",
+      "repository": "machackabook/ideal-enigma",
+      "url": "https://github.com/machackabook/ideal-enigma/blob/8c391e38fbb8da42be55fc4c846a61703e3d61c6/layers/tdoc-gaia-cloud-mount-v3.sh",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "remedy-tdoc-godmode-aimode-v4.card",
+      "path": "remedy-tdoc-godmode-aimode-v4.card",
+      "repository": "machackabook/NEXUS-SENTINEL-LEDGER",
+      "url": "https://github.com/machackabook/NEXUS-SENTINEL-LEDGER/blob/439d7bd9900d0d49dd06e58949a303efd50e8c5b/remedy-tdoc-godmode-aimode-v4.card",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "remedy-tdoc-lyra-vosk-repair-v2.card",
+      "path": "remedy-tdoc-lyra-vosk-repair-v2.card",
+      "repository": "machackabook/NEXUS-SENTINEL-LEDGER",
+      "url": "https://github.com/machackabook/NEXUS-SENTINEL-LEDGER/blob/439d7bd9900d0d49dd06e58949a303efd50e8c5b/remedy-tdoc-lyra-vosk-repair-v2.card",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "tdoc-meta-wrapper-v9.sh",
+      "path": "sentinel_prime/tdoc-meta-wrapper-v9.sh",
+      "repository": "machackabook/NEXUS-SENTINEL-LEDGER",
+      "url": "https://github.com/machackabook/NEXUS-SENTINEL-LEDGER/blob/439d7bd9900d0d49dd06e58949a303efd50e8c5b/sentinel_prime/tdoc-meta-wrapper-v9.sh",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "remedy-tdoc-shadow-executor-0011-v3.card",
+      "path": "remedy-tdoc-shadow-executor-0011-v3.card",
+      "repository": "machackabook/NEXUS-SENTINEL-LEDGER",
+      "url": "https://github.com/machackabook/NEXUS-SENTINEL-LEDGER/blob/439d7bd9900d0d49dd06e58949a303efd50e8c5b/remedy-tdoc-shadow-executor-0011-v3.card",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "tdoc-meta-wrapper-v8.sh",
+      "path": "archive/original/tdoc-meta-wrapper-v8.sh",
+      "repository": "machackabook/NEXUS-SENTINEL-LEDGER",
+      "url": "https://github.com/machackabook/NEXUS-SENTINEL-LEDGER/blob/439d7bd9900d0d49dd06e58949a303efd50e8c5b/archive/original/tdoc-meta-wrapper-v8.sh",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "tdoc-cloud-hybrid-sync-daemon-v1.sh",
+      "path": "layers/tdoc-cloud-hybrid-sync-daemon-v1.sh",
+      "repository": "machackabook/ideal-enigma",
+      "url": "https://github.com/machackabook/ideal-enigma/blob/8c391e38fbb8da42be55fc4c846a61703e3d61c6/layers/tdoc-cloud-hybrid-sync-daemon-v1.sh",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "tdoc-gaia-cli-reindexer-v3.sh",
+      "path": "layers/tdoc-gaia-cli-reindexer-v3.sh",
+      "repository": "machackabook/ideal-enigma",
+      "url": "https://github.com/machackabook/ideal-enigma/blob/8c391e38fbb8da42be55fc4c846a61703e3d61c6/layers/tdoc-gaia-cli-reindexer-v3.sh",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "tdoc-gaia-memlink-bridge-v1.sh",
+      "path": "layers/tdoc-gaia-memlink-bridge-v1.sh",
+      "repository": "machackabook/ideal-enigma",
+      "url": "https://github.com/machackabook/ideal-enigma/blob/8c391e38fbb8da42be55fc4c846a61703e3d61c6/layers/tdoc-gaia-memlink-bridge-v1.sh",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "tdoc-gaia-policy-gate-0001.run(1).sh",
+      "path": "layers/tdoc-gaia-policy-gate-0001.run(1).sh",
+      "repository": "machackabook/ideal-enigma",
+      "url": "https://github.com/machackabook/ideal-enigma/blob/8c391e38fbb8da42be55fc4c846a61703e3d61c6/layers/tdoc-gaia-policy-gate-0001.run(1).sh",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "tdoc-sentinel-v11.html",
+      "path": "interfaces/tdoc-sentinel-v11.html",
+      "repository": "machackabook/Cryptic",
+      "url": "https://github.com/machackabook/Cryptic/blob/2db6dcabc3b15e78c26ac78bd47336b8b4d3d2de/interfaces/tdoc-sentinel-v11.html",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "README.md",
+      "path": "GAIASWINDOW/runtime/tdoc-v11/README.md",
+      "repository": "machackabook/continuity-ledger-cycle",
+      "url": "https://github.com/machackabook/continuity-ledger-cycle/blob/a164fd7fdea07469603b6aaf1585fb473b802c6f/GAIASWINDOW/runtime/tdoc-v11/README.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "TDOC-11004-OmniKernel-Acode-Canvas.html",
+      "path": "layers/TDOC-11004-OmniKernel-Acode-Canvas.html",
+      "repository": "machackabook/ideal-enigma",
+      "url": "https://github.com/machackabook/ideal-enigma/blob/8c391e38fbb8da42be55fc4c846a61703e3d61c6/layers/TDOC-11004-OmniKernel-Acode-Canvas.html",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-321.md",
+      "path": "docs/HOP-321.md",
+      "repository": "machackabook/nexus-repo-sync",
+      "url": "https://github.com/machackabook/nexus-repo-sync/blob/59b6fb4eeb147668b10d89c14956e968056f1cb4/docs/HOP-321.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "README.md",
+      "path": "ADAM_CORE/README.md",
+      "repository": "machackabook/Project-NexusCryptic",
+      "url": "https://github.com/machackabook/Project-NexusCryptic/blob/33988969fa181eb734bb4ac840cdfc044d5a2d68/ADAM_CORE/README.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "README.md",
+      "path": "README.md",
+      "repository": "machackabook/tdoc-ledgertrove",
+      "url": "https://github.com/machackabook/tdoc-ledgertrove/blob/525f4564e330b363d4e94be4e7909c202b784ea0/README.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "README.md",
+      "path": "README.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/README.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "README.md",
+      "path": "README.md",
+      "repository": "machackabook/NEXUS-SENTINEL-LEDGER",
+      "url": "https://github.com/machackabook/NEXUS-SENTINEL-LEDGER/blob/439d7bd9900d0d49dd06e58949a303efd50e8c5b/README.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "README.md",
+      "path": "README.md",
+      "repository": "machackabook/nexus-repo-sync",
+      "url": "https://github.com/machackabook/nexus-repo-sync/blob/59b6fb4eeb147668b10d89c14956e968056f1cb4/README.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "SECURITY.md",
+      "path": "SECURITY.md",
+      "repository": "machackabook/ideal-enigma",
+      "url": "https://github.com/machackabook/ideal-enigma/blob/8c391e38fbb8da42be55fc4c846a61703e3d61c6/SECURITY.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-269.md",
+      "path": "docs/HOP-269.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/HOP-269.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-283.md",
+      "path": "docs/HOP-283.md",
+      "repository": "machackabook/continuity-ledger-cycle",
+      "url": "https://github.com/machackabook/continuity-ledger-cycle/blob/a164fd7fdea07469603b6aaf1585fb473b802c6f/docs/HOP-283.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-331.md",
+      "path": "docs/HOP-331.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/HOP-331.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-302.md",
+      "path": "docs/HOP-302.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/HOP-302.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-298.md",
+      "path": "docs/HOP-298.md",
+      "repository": "machackabook/TheLedgerIndex",
+      "url": "https://github.com/machackabook/TheLedgerIndex/blob/50fcdad26dcbc880560b2bb93e651e039a97281c/docs/HOP-298.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-287.md",
+      "path": "docs/HOP-287.md",
+      "repository": "machackabook/continuity-ledger-cycle",
+      "url": "https://github.com/machackabook/continuity-ledger-cycle/blob/a164fd7fdea07469603b6aaf1585fb473b802c6f/docs/HOP-287.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-304.md",
+      "path": "docs/HOP-304.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/HOP-304.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-276.md",
+      "path": "docs/HOP-276.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/HOP-276.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-305.md",
+      "path": "docs/HOP-305.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/HOP-305.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-291.md",
+      "path": "docs/HOP-291.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/HOP-291.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-335.md",
+      "path": "docs/HOP-335.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/HOP-335.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-287.md",
+      "path": "docs/HOP-287.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/HOP-287.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-300.md",
+      "path": "docs/HOP-300.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/HOP-300.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-321.md",
+      "path": "docs/HOP-321.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/HOP-321.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-285.md",
+      "path": "docs/HOP-285.md",
+      "repository": "machackabook/continuity-ledger-cycle",
+      "url": "https://github.com/machackabook/continuity-ledger-cycle/blob/a164fd7fdea07469603b6aaf1585fb473b802c6f/docs/HOP-285.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-318.md",
+      "path": "docs/HOP-318.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/HOP-318.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-286.md",
+      "path": "docs/HOP-286.md",
+      "repository": "machackabook/continuity-ledger-cycle",
+      "url": "https://github.com/machackabook/continuity-ledger-cycle/blob/a164fd7fdea07469603b6aaf1585fb473b802c6f/docs/HOP-286.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-284.md",
+      "path": "docs/HOP-284.md",
+      "repository": "machackabook/continuity-ledger-cycle",
+      "url": "https://github.com/machackabook/continuity-ledger-cycle/blob/a164fd7fdea07469603b6aaf1585fb473b802c6f/docs/HOP-284.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-282.md",
+      "path": "docs/HOP-282.md",
+      "repository": "machackabook/continuity-ledger-cycle",
+      "url": "https://github.com/machackabook/continuity-ledger-cycle/blob/a164fd7fdea07469603b6aaf1585fb473b802c6f/docs/HOP-282.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-325.md",
+      "path": "docs/HOP-325.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/HOP-325.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-347.md",
+      "path": "docs/HOP-347.md",
+      "repository": "machackabook/hamiltonian-incursion",
+      "url": "https://github.com/machackabook/hamiltonian-incursion/blob/64233a64936eb4d5614d41390d784aacaa6fc016/docs/HOP-347.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOURLY.md",
+      "path": "ledger/HOURLY.md",
+      "repository": "machackabook/continuity-engine-ssos",
+      "url": "https://github.com/machackabook/continuity-engine-ssos/blob/4bf773992f781aca03443aa015d2b65347324b98/ledger/HOURLY.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-329.md",
+      "path": "LEDGER/HOP-329.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/LEDGER/HOP-329.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "security_audit.md",
+      "path": "security_audit.md",
+      "repository": "machackabook/Sovereign-Operating-System",
+      "url": "https://github.com/machackabook/Sovereign-Operating-System/blob/c66ec860ed87e5b785c5441603db04436357ae5b/security_audit.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-299.md",
+      "path": "docs/CYCLE-299.md",
+      "repository": "machackabook/TheLedgerIndex",
+      "url": "https://github.com/machackabook/TheLedgerIndex/blob/50fcdad26dcbc880560b2bb93e651e039a97281c/docs/CYCLE-299.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-330.md",
+      "path": "LEDGER/HOP-330.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/LEDGER/HOP-330.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-341.md",
+      "path": "ledger/HOP-341.md",
+      "repository": "machackabook/living-bibliography-continuity-engine",
+      "url": "https://github.com/machackabook/living-bibliography-continuity-engine/blob/669d762a16af91bf69e31cc952a6242887942901/ledger/HOP-341.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-339.md",
+      "path": "LEDGER/HOP-339.md",
+      "repository": "machackabook/tdoc-ledgertrove",
+      "url": "https://github.com/machackabook/tdoc-ledgertrove/blob/525f4564e330b363d4e94be4e7909c202b784ea0/LEDGER/HOP-339.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-331.md",
+      "path": "LEDGER/HOP-331.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/LEDGER/HOP-331.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-327.md",
+      "path": "LEDGER/HOP-327.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/LEDGER/HOP-327.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-350.md",
+      "path": "LEDGER/HOP-350.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/LEDGER/HOP-350.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-287.md",
+      "path": "ledger/HOP-287.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/ledger/HOP-287.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-285.md",
+      "path": "ledger/HOP-285.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/ledger/HOP-285.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-321.md",
+      "path": "LEDGER/HOP-321.md",
+      "repository": "machackabook/tdoc-ledgertrove",
+      "url": "https://github.com/machackabook/tdoc-ledgertrove/blob/525f4564e330b363d4e94be4e7909c202b784ea0/LEDGER/HOP-321.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOP-346.md",
+      "path": "LEDGER/HOP-346.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/LEDGER/HOP-346.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "README.md",
+      "path": "compute/README.md",
+      "repository": "machackabook/Cryptic",
+      "url": "https://github.com/machackabook/Cryptic/blob/2db6dcabc3b15e78c26ac78bd47336b8b4d3d2de/compute/README.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "RECOVERY_ANCHORS.md",
+      "path": "ADAM_CORE/RECOVERY_ANCHORS.md",
+      "repository": "machackabook/Project-NexusCryptic",
+      "url": "https://github.com/machackabook/Project-NexusCryptic/blob/33988969fa181eb734bb4ac840cdfc044d5a2d68/ADAM_CORE/RECOVERY_ANCHORS.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-296.md",
+      "path": "LEDGER/CYCLE-296.md",
+      "repository": "machackabook/tdoc-ledgertrove",
+      "url": "https://github.com/machackabook/tdoc-ledgertrove/blob/525f4564e330b363d4e94be4e7909c202b784ea0/LEDGER/CYCLE-296.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-300.md",
+      "path": "ledger/CYCLE-300.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/ledger/CYCLE-300.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-322.md",
+      "path": "LEDGER/CYCLE-322.md",
+      "repository": "machackabook/tdoc-ledgertrove",
+      "url": "https://github.com/machackabook/tdoc-ledgertrove/blob/525f4564e330b363d4e94be4e7909c202b784ea0/LEDGER/CYCLE-322.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-300.md",
+      "path": "LEDGER/CYCLE-300.md",
+      "repository": "machackabook/tdoc-ledgertrove",
+      "url": "https://github.com/machackabook/tdoc-ledgertrove/blob/525f4564e330b363d4e94be4e7909c202b784ea0/LEDGER/CYCLE-300.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-296.md",
+      "path": "ledger/CYCLE-296.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/ledger/CYCLE-296.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-295.md",
+      "path": "ledger/CYCLE-295.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/ledger/CYCLE-295.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-299.md",
+      "path": "ledger/CYCLE-299.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/ledger/CYCLE-299.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-299.md",
+      "path": "LEDGER/CYCLE-299.md",
+      "repository": "machackabook/tdoc-ledgertrove",
+      "url": "https://github.com/machackabook/tdoc-ledgertrove/blob/525f4564e330b363d4e94be4e7909c202b784ea0/LEDGER/CYCLE-299.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "SIBLING-MAP.md",
+      "path": "docs/SIBLING-MAP.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/SIBLING-MAP.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-352.md",
+      "path": "LEDGER/CYCLE-352.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/LEDGER/CYCLE-352.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-341.md",
+      "path": "LEDGER/CYCLE-341.md",
+      "repository": "machackabook/tdoc-ledgertrove",
+      "url": "https://github.com/machackabook/tdoc-ledgertrove/blob/525f4564e330b363d4e94be4e7909c202b784ea0/LEDGER/CYCLE-341.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-298.md",
+      "path": "LEDGER/CYCLE-298.md",
+      "repository": "machackabook/tdoc-ledgertrove",
+      "url": "https://github.com/machackabook/tdoc-ledgertrove/blob/525f4564e330b363d4e94be4e7909c202b784ea0/LEDGER/CYCLE-298.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-349.md",
+      "path": "LEDGER/CYCLE-349.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/LEDGER/CYCLE-349.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-353.md",
+      "path": "ledger/CYCLE-353.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/ledger/CYCLE-353.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "TEAM_ENHANCE_CYCLE_268.md",
+      "path": "docs/TEAM_ENHANCE_CYCLE_268.md",
+      "repository": "machackabook/nexus-repo-sync",
+      "url": "https://github.com/machackabook/nexus-repo-sync/blob/59b6fb4eeb147668b10d89c14956e968056f1cb4/docs/TEAM_ENHANCE_CYCLE_268.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "LEDGER-STAMP.md",
+      "path": "docs/LEDGER-STAMP.md",
+      "repository": "machackabook/tdoc-ledgertrove",
+      "url": "https://github.com/machackabook/tdoc-ledgertrove/blob/525f4564e330b363d4e94be4e7909c202b784ea0/docs/LEDGER-STAMP.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "azazel",
+      "path": "bin/azazel",
+      "repository": "machackabook/lilith-termux",
+      "url": "https://github.com/machackabook/lilith-termux/blob/b23cace861b4c925184422dcb1cb87108ebff006/bin/azazel",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "LEDGER-STAMP.md",
+      "path": "ledger/LEDGER-STAMP.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/ledger/LEDGER-STAMP.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CONTINUITY_PIPELINE.md",
+      "path": "CONTINUITY_PIPELINE.md",
+      "repository": "machackabook/ENCLAVE-ADAM-REUNITED",
+      "url": "https://github.com/machackabook/ENCLAVE-ADAM-REUNITED/blob/2d12459737d823592bd754772ade00a2cc58f99b/CONTINUITY_PIPELINE.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "README.md",
+      "path": "README.md",
+      "repository": "machackabook/living-bibliography-continuity-engine",
+      "url": "https://github.com/machackabook/living-bibliography-continuity-engine/blob/669d762a16af91bf69e31cc952a6242887942901/README.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "2026-09-30-351.md",
+      "path": "LEDGER/2026-09-30-351.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/LEDGER/2026-09-30-351.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "README.md",
+      "path": "README.md",
+      "repository": "machackabook/continuity-engine-ssos",
+      "url": "https://github.com/machackabook/continuity-engine-ssos/blob/4bf773992f781aca03443aa015d2b65347324b98/README.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "ledger.appendonly",
+      "path": "ledger.appendonly",
+      "repository": "machackabook/NEXUS-SENTINEL-LEDGER",
+      "url": "https://github.com/machackabook/NEXUS-SENTINEL-LEDGER/blob/439d7bd9900d0d49dd06e58949a303efd50e8c5b/ledger.appendonly",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "waterfall.sh",
+      "path": "scripts/waterfall.sh",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/scripts/waterfall.sh",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "PATHING_AND_DEPENDENCY_GRAPH.md",
+      "path": "ADAM_CORE/PATHING_AND_DEPENDENCY_GRAPH.md",
+      "repository": "machackabook/Project-NexusCryptic",
+      "url": "https://github.com/machackabook/Project-NexusCryptic/blob/33988969fa181eb734bb4ac840cdfc044d5a2d68/ADAM_CORE/PATHING_AND_DEPENDENCY_GRAPH.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "CYCLE-304-SPEEDWAY-HOP.md",
+      "path": "ledger/CYCLE-304-SPEEDWAY-HOP.md",
+      "repository": "machackabook/hamiltonian-incursion",
+      "url": "https://github.com/machackabook/hamiltonian-incursion/blob/64233a64936eb4d5614d41390d784aacaa6fc016/ledger/CYCLE-304-SPEEDWAY-HOP.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "SESSION_2026-09-27_14CDT.md",
+      "path": "docs/SESSION_2026-09-27_14CDT.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/SESSION_2026-09-27_14CDT.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "SESSION_2026-09-26_19CDT.md",
+      "path": "docs/SESSION_2026-09-26_19CDT.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/SESSION_2026-09-26_19CDT.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "SESSION_2026-09-27_18CDT.md",
+      "path": "docs/SESSION_2026-09-27_18CDT.md",
+      "repository": "machackabook/continuity-mesh-speedway",
+      "url": "https://github.com/machackabook/continuity-mesh-speedway/blob/9cf854626b5d4a0ee55ef858b0c186010effb957/docs/SESSION_2026-09-27_18CDT.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "README.md",
+      "path": "README.md",
+      "repository": "machackabook/lilith-termux",
+      "url": "https://github.com/machackabook/lilith-termux/blob/b23cace861b4c925184422dcb1cb87108ebff006/README.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOURLY-2026-09-28-21CDT.md",
+      "path": "LEDGER/HOURLY-2026-09-28-21CDT.md",
+      "repository": "machackabook/tdoc-ledgertrove",
+      "url": "https://github.com/machackabook/tdoc-ledgertrove/blob/525f4564e330b363d4e94be4e7909c202b784ea0/LEDGER/HOURLY-2026-09-28-21CDT.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "HOURLY-2026-09-27-22CDT.md",
+      "path": "LEDGER/HOURLY-2026-09-27-22CDT.md",
+      "repository": "machackabook/tdoc-ledgertrove",
+      "url": "https://github.com/machackabook/tdoc-ledgertrove/blob/525f4564e330b363d4e94be4e7909c202b784ea0/LEDGER/HOURLY-2026-09-27-22CDT.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "README.md",
+      "path": "README.md",
+      "repository": "machackabook/The-Hive",
+      "url": "https://github.com/machackabook/The-Hive/blob/597962f7bc7579d0afd349c8c0ac47c53e277703/README.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "publish-termux.sh",
+      "path": "publish-termux.sh",
+      "repository": "machackabook/G.O.D.",
+      "url": "https://github.com/machackabook/G.O.D./blob/9493a98db19495221cdc9474838226544da80992/publish-termux.sh",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "continuity",
+      "path": "GAIASWINDOW/bin/continuity",
+      "repository": "machackabook/continuity-ledger-cycle",
+      "url": "https://github.com/machackabook/continuity-ledger-cycle/blob/a164fd7fdea07469603b6aaf1585fb473b802c6f/GAIASWINDOW/bin/continuity",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "irc.html",
+      "path": "modules/irc.html",
+      "repository": "machackabook/Cryptic",
+      "url": "https://github.com/machackabook/Cryptic/blob/2db6dcabc3b15e78c26ac78bd47336b8b4d3d2de/modules/irc.html",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "README.md",
+      "path": "README.md",
+      "repository": "machackabook/hamiltonian-incursion",
+      "url": "https://github.com/machackabook/hamiltonian-incursion/blob/64233a64936eb4d5614d41390d784aacaa6fc016/README.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    },
+    {
+      "title": "2026-09-28T18-11Z-enhance-hop.md",
+      "path": "LEDGER/2026-09-28T18-11Z-enhance-hop.md",
+      "repository": "machackabook/tdoc-ledgertrove",
+      "url": "https://github.com/machackabook/tdoc-ledgertrove/blob/525f4564e330b363d4e94be4e7909c202b784ea0/LEDGER/2026-09-28T18-11Z-enhance-hop.md",
+      "source": "github",
+      "classification": "filename-or-code-match"
+    }
+  ]
+}
