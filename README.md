@@ -110,6 +110,9 @@ flowchart LR
   R --> S
 ```
 
+
+**Sovereign Sentinel v2 expansion:** [EU AI Act evidence profiler, Slurm/HPC attestation, and multi-tenant Merkle proof design](docs/TDOC-SOVEREIGN-SENTINEL-COMPLIANCE-HPC-MERKLE-v2.md). These are design gates, not operational or certified capabilities. Browser IndexedDB is mutable; hardware attestation requires a verified hardware quote; geographic residency and zero-knowledge claims require independent evidence.
+
 ## GitHub and Cloudflare
 
 The public Cloudflare Worker is a separate source/download landing page and health manifest. It has no private vault or local control API. It links this repository and GAIA; it does not pretend to run a visitor's local environment. No existing crypticnews.org DNS records are changed. `cloudflare/wrangler.jsonc` can redeploy it with an account-scoped Workers edit token. GitHub CI uses contents:read and performs verification, Python contracts, JavaScript syntax, installer smoke test and packaging consistency. No unattended source pushes or private log uploads are enabled.
