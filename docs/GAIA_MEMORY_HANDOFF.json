@@ -1,0 +1,45 @@
+{
+  "schema": "gaia.portable-handoff.v1",
+  "version": "1.0.0",
+  "canonicalPortal": "https://gaia-memory-portal.machackabook.chatgpt.site",
+  "canonicalBridge": "https://gaia-nexus-memory-bridge.machackabook.chatgpt.site",
+  "mcpServers": {
+    "gaia-nexus-memory": {
+      "type": "streamable-http",
+      "url": "https://gaia-nexus-memory-bridge.machackabook.chatgpt.site/mcp"
+    }
+  },
+  "oauth_resource": "https://gaia-nexus-memory-bridge.machackabook.chatgpt.site/mcp",
+  "identity": {
+    "login": "Authenticate independently inside the receiving browser or supported MCP client.",
+    "session_transfer": false,
+    "containsCredentials": false,
+    "containsMemoryRecords": false
+  },
+  "entryPoints": {
+    "portalMesh": "https://gaia-memory-portal.machackabook.chatgpt.site/#mesh",
+    "portalManifest": "https://gaia-memory-portal.machackabook.chatgpt.site/api/mesh/manifest",
+    "memoryBridge": "https://gaia-nexus-memory-bridge.machackabook.chatgpt.site",
+    "memoryMcp": "https://gaia-nexus-memory-bridge.machackabook.chatgpt.site/mcp"
+  },
+  "continuity": {
+    "identityMethod": "Stable reference IDs with explicit parent references and revisions.",
+    "urlLengthIsRevision": false,
+    "chatBranchingPreservesAuthentication": false,
+    "mhtmlRestoresSession": false,
+    "automaticMoveWatcher": "not connected; requires authorized provider events or inventory snapshots"
+  },
+  "verification": [
+    "Connect the OAuth-protected MCP endpoint using a compatible client.",
+    "Authenticate in that client. A browser sign-in elsewhere is separate.",
+    "Call memory_status and confirm a successful authenticated response.",
+    "Search for the exact requested context, then read returned record IDs.",
+    "Use memory_verify for ledger consistency; this does not prove authorship or recover tokens."
+  ],
+  "boundaries": [
+    "Do not paste session cookies, OAuth codes, access tokens, node enrollment files, or Sites gateway credentials into a receiving chat or notebook.",
+    "MHTML may preserve rendered reference content. Treat it as potentially containing private page text; it is not a reusable authenticated session.",
+    "Do not rewrite old receipt hashes or fabricate branch mappings. Record an actual URL/reference change as a new revision.",
+    "No provider harvesting, file-move telemetry, session renewal, or cross-provider access is granted by this handoff."
+  ]
+}

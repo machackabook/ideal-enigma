@@ -1,0 +1,42 @@
+{
+  "engine": "GAIA-NEXUS-ADAM-KOOPMAN-1.0",
+  "run_utc": "2026-10-23T07:48:38.933878+00:00",
+  "local_numerical_tests_passed": 7,
+  "source_dataset": "exact supplied x(t), y(t) Fourier equations (analytic, no fabricated network responses)",
+  "blobs_uploaded": false,
+  "flexiblas_switch_tested": false,
+  "bun_runtime_tested": false,
+  "sha256": {
+    "gaia_adaptive_koopman_v1.py": "9107d9176ebaafce6b5b27b9af67dac9e7064fa7220f5f01994639f54d897530",
+    "test_gaia_adaptive_koopman_v1.py": "1329457f5636e76e757084dfcdf9aa302ba24a1a36bb6b8aa03788c457b8adf8",
+    "gaia_adaptive_koopman_requirements.txt": "f6fc0d8ad0997baf7f6197a6032a6e873d18a7fbe9c5af4ac5d99dacb3e879b0",
+    "gaia_koopman_v1_install_and_verify.sh": "3911a4dcd6bf7889c23c30200e34dd0f47c5a5865839f141a6dbe176e230cedc",
+    "GAIA_KOOPMAN_README_v1.md": "9b3587cda87c4a3314f2687dcf7a5cf2744e9e9bdd73885864cb1a1243639024",
+    "gaia_koopman_v1_verified.jsonl": "b01db7d0781c511fcfb6972a86c42a6e883210fc4cd5fc722864ec5717385a79",
+    "gaia_koopman_v1_low_rank.jsonl": "24e7bae56092592851dd504cdd322b52fefaa618baa4faa41022ceea6e8ed706",
+    "GAIA_KOOPMAN_DYNAMICS_PATCH_v1.wl": "f2bd2a09e520811d8a808f9fd172f18c82204ba4cd05aa968308b8220a3be5ab"
+  },
+  "high_fidelity": {
+    "windows": 3,
+    "mean_test_rmse": 0.03653884033333333,
+    "mean_baseline_rmse": 0.144816501,
+    "windows_beating_persistence": 3,
+    "selected_ranks": [
+      65,
+      65,
+      65
+    ]
+  },
+  "compressed": {
+    "windows": 3,
+    "mean_test_rmse": 0.2737938326666667,
+    "mean_baseline_rmse": 0.144816501,
+    "windows_beating_persistence": 0,
+    "selected_ranks": [
+      15,
+      15,
+      15
+    ]
+  },
+  "wolfram_patch_executed": false
+}

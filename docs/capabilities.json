@@ -1,0 +1,42 @@
+{
+  "version": "1.0.0",
+  "implemented": [
+    "local text ingest",
+    "vault metadata mesh",
+    "hash ledger",
+    "verified shadow regeneration",
+    "bounded periodic checks",
+    "EPUB documentation export",
+    "Gemini molt adapter",
+    "MCP status adapter",
+    "Linux protocol association"
+  ],
+  "requires_configuration": [
+    "GEMINI_API_KEY",
+    "GEMINI_MODEL",
+    "GAIA_MEMORY_TOKEN"
+  ],
+  "not_implemented": [
+    "TC native plugin ABI host",
+    "automatic bulk provider exports",
+    "distributed device mesh",
+    "automatic GitHub pushes",
+    "formal quine",
+    "fnz",
+    "iso beat"
+  ],
+  "catalogs": [
+    "https://www.ghisler.com/plugins.htm#filesys",
+    "https://www.ghisler.com/plugins.htm#content",
+    "https://www.ghisler.com/plugins.htm#lister",
+    "https://www.ghisler.com/tools.htm#packers",
+    "https://www.ghisler.com/tools.htm#other",
+    "https://www.ghisler.com/languages.htm",
+    "https://obsidian.md/help/web-clipper"
+  ],
+  "optional_extensions": {
+    "koopman": "explicit CLI invocation; requirements-math.txt",
+    "Mathematica": "caller dictionary and licensed wolframscript required",
+    "ISO": "data ISO with existing xorriso"
+  }
+}

@@ -1,0 +1,142 @@
+[
+  {
+    "name": "# combined_repair_hologram_runtime.py.pdf",
+    "bytes": 362090,
+    "sha256": "773170a7734b2171bfea409508d6f9134a39f0ba0fc3863c228eb4fd809fea03",
+    "activation": "reference-only",
+    "status": "archive or PDF: receipt only; no dependency bundle auto-execution"
+  },
+  {
+    "name": "AXS_6667_COAXIAL_v3_STANDALONE.html",
+    "bytes": 643499,
+    "sha256": "dc3046063a1d0b2695229ca4f8410a508442be9558dc1eef9f8ede70904a015d",
+    "activation": "reference-only",
+    "status": "preserved reference; not auto-executed"
+  },
+  {
+    "name": "Automated Arithmetic Inverse Engine.html",
+    "bytes": 24392,
+    "sha256": "8633bdcb304297c433f6c7c7df934341c15530f074b38b9c3727112d55b1a444",
+    "activation": "reference-only",
+    "status": "quarantined: NUL bytes; original retained in attachment, receipt only"
+  },
+  {
+    "name": "GAIA_KOOPMAN_DYNAMICS_PATCH_v1.wl",
+    "bytes": 2062,
+    "sha256": "f2bd2a09e520811d8a808f9fd172f18c82204ba4cd05aa968308b8220a3be5ab",
+    "activation": "reference-only",
+    "status": "preserved reference; not auto-executed"
+  },
+  {
+    "name": "GAIA_KOOPMAN_PROOF_MANIFEST_v1.json",
+    "bytes": 1692,
+    "sha256": "4e5f8245d2e0123befa6aa8d10eae56c37e6c1d1e6def22bd8c4867d087eab5e",
+    "activation": "reference-only",
+    "status": "preserved reference; not auto-executed"
+  },
+  {
+    "name": "GAIA_MEMORY_PORTABLE_HANDOFF_v1.0.0.zip",
+    "bytes": 3471,
+    "sha256": "8c6bc508549a13f197f9cb1ae0f2700052bed88b2bf033199947f13216bc2df7",
+    "activation": "reference-only",
+    "status": "archive or PDF: receipt only; no dependency bundle auto-execution"
+  },
+  {
+    "name": "SOVEREIGN_SEAL_FORENSIC_KIT.zip",
+    "bytes": 793942,
+    "sha256": "97567a371e311ceced6b7c7a4fe3f7df2d899192189ba2b53fbbe86ca0d8d115",
+    "activation": "reference-only",
+    "status": "archive or PDF: receipt only; no dependency bundle auto-execution"
+  },
+  {
+    "name": "TDOC-11004-OmniKernel-Acode-Canvas.html",
+    "bytes": 6455,
+    "sha256": "20fcc83c37f8120cacb30f0ad4c553705ac32a0176b670f53540dbde9e6c201a",
+    "activation": "reference-only",
+    "status": "preserved reference; not auto-executed"
+  },
+  {
+    "name": "gaia_adaptive_koopman_v1.py",
+    "bytes": 17229,
+    "sha256": "9107d9176ebaafce6b5b27b9af67dac9e7064fa7220f5f01994639f54d897530",
+    "activation": "reference-only",
+    "status": "preserved reference; not auto-executed"
+  },
+  {
+    "name": "hyperterminal-polyglot-quine-os.zip",
+    "bytes": 19364881,
+    "sha256": "23ea43825b69078ca2baf308718802fe77f0004279a6de464e29dc3c4a76d197",
+    "activation": "reference-only",
+    "status": "archive or PDF: receipt only; no dependency bundle auto-execution"
+  },
+  {
+    "name": "orb-renderer.pdf",
+    "bytes": 133289,
+    "sha256": "1962bdd68d7f1a105c3aecfc56e24c19b453ba1047d4c35e45bd80a15171d914",
+    "activation": "reference-only",
+    "status": "archive or PDF: receipt only; no dependency bundle auto-execution"
+  },
+  {
+    "name": "tdoc-cloud-hybrid-sync-daemon-v1.sh",
+    "bytes": 4696,
+    "sha256": "43ec8039b75b4bf5d80f12a01c7bbeb00f4af9a8e8de125e6b727ec740cf9679",
+    "activation": "reference-only",
+    "status": "preserved reference; not auto-executed"
+  },
+  {
+    "name": "tdoc-gaia-architect-0001.sh",
+    "bytes": 2846,
+    "sha256": "77180e6bc9f39e0f3e1db50fd74519045c8f9fbd555a4eb4da6285823829c66c",
+    "activation": "reference-only",
+    "status": "preserved reference; not auto-executed"
+  },
+  {
+    "name": "tdoc-gaia-cli-reindexer-v3.sh",
+    "bytes": 2320,
+    "sha256": "33bde76904b0b3b5b5e3070e51e900857b77cae5fdaca009073ed73dd70e5833",
+    "activation": "reference-only",
+    "status": "preserved reference; not auto-executed"
+  },
+  {
+    "name": "tdoc-gaia-cloud-mount-v3.sh",
+    "bytes": 3049,
+    "sha256": "0a45faa5ffed7e5c24d63acf61a6bca4e9808dc18af01592e3a3c0e8e8864e43",
+    "activation": "reference-only",
+    "status": "preserved reference; not auto-executed"
+  },
+  {
+    "name": "tdoc-gaia-index-rebuild-v4.sh",
+    "bytes": 30,
+    "sha256": "d476d57c35344b9d1a9f138e94b8d9c88764f1a9f6bd76cab225bc12c2a8810c",
+    "activation": "reference-only",
+    "status": "incomplete: placeholder; original retained as reference"
+  },
+  {
+    "name": "tdoc-gaia-memlink-bridge-v1.sh",
+    "bytes": 2280,
+    "sha256": "384444a1480a10e9a78b2f5368091e5f2dedc3682c5500613a18decc9c379b69",
+    "activation": "reference-only",
+    "status": "preserved reference; not auto-executed"
+  },
+  {
+    "name": "tdoc-gaia-policy-gate-0001.run(1).sh",
+    "bytes": 7572,
+    "sha256": "de3b49c77f791fe3b05e706b12f59a0110fa9ab48adc9450ebfa44a6aa1892da",
+    "activation": "reference-only",
+    "status": "preserved reference; not auto-executed"
+  },
+  {
+    "name": "tdoc-gaia-sense-v2.sh",
+    "bytes": 1734,
+    "sha256": "6c980acb7da869fcfdb1ff9bf4089d847eca61be3169c81f10e458d1c5efda18",
+    "activation": "reference-only",
+    "status": "preserved reference; not auto-executed"
+  },
+  {
+    "name": "tdoc-Ω-gaia-syncfabric-0001 (1).sh",
+    "bytes": 2339,
+    "sha256": "0c00adf7d37b1d772966d98db8f1a17fcdbf9cc1b696e7bab3357c803c559c48",
+    "activation": "reference-only",
+    "status": "preserved reference; not auto-executed"
+  }
+]
