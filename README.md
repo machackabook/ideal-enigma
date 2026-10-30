@@ -1,70 +1,30 @@
 # UNIOMNI Stage 0 · v1.0.0
 
-## 🔎 SEARCH UNIOMNI — README index entry
+## UNIOMNI · README SEARCH CONSOLE
 
-### Typeable README search — print/echo terminal edition
+> **README.md is the primary index.** This console is visible immediately when GitHub renders the README. The separate `index.html` landing page is not used for this search.
 
-**This command searches the README's actual Markdown index tables.** Paste the entire block into a terminal with Python 3 and network access (Termux, Crostini/Linux, macOS, or Windows Python terminal). It fetches this public README, prompts for text, and **prints matching indexed rows and Markdown links**. No JavaScript, HTML runtime, extra packages, login, or local filesystem scan. It does not execute any content retrieved from GitHub.
-
-```bash
-python3 - <<'PY'
-import re, urllib.request
-URL = "https://raw.githubusercontent.com/machackabook/ideal-enigma/main/README.md"
-try:
-    with urllib.request.urlopen(URL, timeout=15) as response:
-        readme = response.read(1_500_001).decode("utf-8")
-    if len(readme) > 1_500_000:
-        raise ValueError("README exceeds the 1.5 MB scan limit")
-except Exception as exc:
-    raise SystemExit(f"Unable to load README: {exc}")
-sections = {}
-section = "Overview"
-for line in readme.splitlines():
-    if line.startswith("### "):
-        section = line[4:].strip()
-    if line.startswith("|") and not re.match(r"^\|[\s:\-|]+\|\s*$", line):
-        cells = [v.strip() for v in line.strip().strip("|").split("|")]
-        if len(cells) >= 3 and not any(c.lower() in ("name / path","local path / command","provider / source","category","search target","source","surface") for c in cells[:1]):
-            sections.setdefault(section, []).append(cells)
-print("\nUNIOMNI README SEARCH — source: README.md")
-print("Commands: /all, /sources, /sort, /quit")
-sort_reverse = False
-while True:
-    try:
-        query = input("\nSearch filename, directory, provider, status or keyword: ").strip()
-    except (EOFError, KeyboardInterrupt):
-        print("\nClosed."); break
-    if query == "/quit":
-        break
-    if query == "/sort":
-        sort_reverse = not sort_reverse
-        print("Sort:", "Z–A" if sort_reverse else "A–Z"); continue
-    if query == "/sources":
-        print("\n".join(sorted(sections)) or "(no sections)"); continue
-    term = "" if query == "/all" else query.casefold()
-    matches = [(group, row) for group, rows in sections.items() for row in rows if term in " ".join(row).casefold()]
-    matches.sort(key=lambda item: (item[0].casefold(), " ".join(item[1]).casefold()), reverse=sort_reverse)
-    print(f"{len(matches)} result(s)")
-    for group, row in matches[:100]:
-        print(f"\n[{group}] " + " | ".join(row))
-    if len(matches) > 100:
-        print(f"… {len(matches)-100} more matches; narrow your search")
-PY
+```text
+╔══════════════════════════════════════════════════════════════════════╗
+║  UNIOMNI / README SEARCH CONSOLE                        ● INDEXED   ║
+╠══════════════════════════════════════════════════════════════════════╣
+║  $ search --source README.md --scope ideal-enigma                     ║
+║  > Enter your query in GitHub's search field via SEARCH ↗            ║
+║  > Or use Find in page to search the README directory below          ║
+║                                                                      ║
+║  SOURCES: README • repository paths • cloud references • vault docs ║
+║  MODES:   filename • keyword • dotfile • evidence • directory        ║
+║  STATUS:  static Markdown index; no executable terminal in README    ║
+╚══════════════════════════════════════════════════════════════════════╝
 ```
 
-**Interactive commands:** `/all` lists indexed records, `/sources` lists index sections, `/sort` toggles ascending/descending ordering, and `/quit` exits. Type `.md`, `vault`, `Cloudflare`, `SHA-256`, `verified`, `GitHub`, or any filename to filter. This command searches **published README records**, not every file in GitHub or a private Google Drive. The GitHub link below is the separate provider-wide search.
+### [⌕ SEARCH — OPEN TYPEABLE REPOSITORY SEARCH](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma&type=code)
 
-**[⌕ TAP HERE TO TYPE A SEARCH QUERY — IDEAL-ENIGMA](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma&type=code)**
+The link opens GitHub's native editable search box scoped to `machackabook/ideal-enigma`. Type a term and press Enter. To search the README's indexed rows **without leaving this page**, use your browser's **Find in page** command. GitHub's README sanitizer does not permit running shell/Python, autofocus, CSS injection, iframe terminals, or custom input handlers on page load; the console above is a rendered text interface, not a live shell.
 
-> **Search input:** the link opens GitHub's real, typeable search box already scoped to this repository. Enter a filename, keyword, exact phrase, extension, or code symbol and press Enter. This requires no custom JavaScript. GitHub README Markdown itself cannot host a functioning text-input/filter widget; an HTML `<input>` placed here would be inert or sanitized, so this index does not pretend otherwise.
+**Quick filters:** [File tree](https://github.com/machackabook/ideal-enigma/tree/main) · [Markdown](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A*.md&type=code) · [Python](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A*.py&type=code) · [JavaScript](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A*.js&type=code) · [Dotfiles](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A.*&type=code) · [SHA-256](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+SHA-256&type=code) · [Verification](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+verified&type=code)
 
-**Find in this page:** use **Find in page** (mobile browser menu or Ctrl+F) to type a term and search the actual README records below.
-
-**Quick query links:** [All files](https://github.com/machackabook/ideal-enigma/tree/main) · [Verified / proof](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+verified&type=code) · [SHA-256](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+SHA-256&type=code) · [Dotfiles](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A.*&type=code) · [Markdown](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A*.md&type=code) · [Python](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A*.py&type=code) · [JavaScript](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A*.js&type=code)
-
-**Browse indexed records:** [File directory](#repository-file-directory) · [Local vault](#runtime-and-vault-paths) · [Cloud sources](#cloud-and-memory-source-directory) · [Verification terms](#verification-keyword-index) · [Coverage](#discovery-coverage-and-privacy).
-
-**Target separation:** **README.md = primary searchable Markdown catalog**; `index.html` = separate runtime/web application, never a prerequisite for README search.
+**README index navigation:** [Repository files](#repository-file-directory) · [Runtime and vault](#runtime-and-vault-paths) · [Cloud and memory](#cloud-and-memory-source-directory) · [Evidence terms](#verification-keyword-index) · [Coverage](#discovery-coverage-and-privacy) · [HTML distinction](#readme-versus-html-separate-targets)
 
 ---
 
