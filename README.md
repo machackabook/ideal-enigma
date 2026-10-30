@@ -70,6 +70,46 @@ Total Commander WFX/WCX/WDX/WLX plugins require native host/ABI adapters and ind
 
 `UNIOMNI_STAGE0.sh` is a self-preserving installer, not a formal mathematical quine. EPUB export is an EPUB 3 documentation container, not an executable shell engine. Optional `tools/extensions.py iso --output path.iso` uses an already installed xorriso to make a data ISO, never writes a disk. “fnz” and “iso beat” have no supplied executable specification and remain named unresolved requirements in the capability manifest.
 
+## Architect_01 · Ouroboros Cryptographic Defense
+
+> **Design gate: NOT READY FOR DEPLOYMENT.** [Full security specification](docs/TDOC-ARCHITECT01-OUROBOROS-CRYPTODEFENSE-v1.md) · [TDOC lineage policy](docs/TDOC-LINEAGE-00000-10124.md) · [Searchable TDOC index](tdoc-index/index.html)
+
+The proposed telemetry-driven defense is an **observe → digest → verify → classify → approve → restore → seal** pipeline. It monitors allowlisted files, validates canonical VFS paths, and prepares signed state receipts. Recovery is limited to independently approved, signed known-good releases; no uncontrolled replication or automatic execution of recovered scripts.
+
+| Control | Required behavior | Current evidence |
+| --- | --- | --- |
+| Identity | `Architect_01` principal; reference IDs are not cryptographic secrets | Specified only |
+| Integrity | SHA-256 byte checks and independently authenticated receipts | Existing release digest verifier; authenticated receipts pending |
+| Telemetry | Bounded, read-only, privacy-filtered events | Proposed |
+| VFS | Canonical paths, no traversal or symlink escapes | Proposed |
+| Ouroboros | Approval-gated local recovery with rollback | Proposed |
+| TDOC | Preserve provenance; never invent missing source documents | Existing lineage policy |
+
+<details>
+<summary><strong>Defense stages and acceptance gates</strong></summary>
+
+1. **G0 — Document:** security model and failure matrix.
+2. **G1 — Observe:** read-only scanner rejects symlink escapes.
+3. **G2 — Digest:** deterministic canonical receipts.
+4. **G3 — Authenticate:** reject wrong keys, modified bytes and replay.
+5. **G4 — Approve:** no recovery without independent authorization.
+6. **G5 — Restore:** atomic promotion and rollback.
+7. **G6 — Release:** CI evidence and human-reviewed public gate.
+
+All runtime stages G1–G6 remain unverified until independently tested.
+
+</details>
+
+```mermaid
+flowchart LR
+  O[Observe] --> D[Digest] --> V{Verify}
+  V -->|Pass| S[Seal receipt]
+  V -->|Fail| A[Alert and review]
+  A -->|Approved| R[Restore signed release]
+  A -->|Denied| X[Stop]
+  R --> S
+```
+
 ## GitHub and Cloudflare
 
 The public Cloudflare Worker is a separate source/download landing page and health manifest. It has no private vault or local control API. It links this repository and GAIA; it does not pretend to run a visitor's local environment. No existing crypticnews.org DNS records are changed. `cloudflare/wrangler.jsonc` can redeploy it with an account-scoped Workers edit token. GitHub CI uses contents:read and performs verification, Python contracts, JavaScript syntax, installer smoke test and packaging consistency. No unattended source pushes or private log uploads are enabled.
