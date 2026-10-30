@@ -49,65 +49,111 @@ The public Cloudflare Worker is a separate source/download landing page and heal
 Build the reviewed monolith: `python3 tools/package.py`; verify: `python3 tools/verify.py`; test: `python3 -m unittest discover -s tests -v`. Keep the Git commit and release hash externally as your trust anchor. A self-contained embedded hash detects accidental corruption, not an attacker who rewrites both payload and hash.
 
 
-## UNIOMNI Search Reader — federated evidence index (planned integration)
+## UNIOMNI README Search Index — live Markdown directory
 
-> **Status: specification / integration target, not a deployed feature.** The existing Stage 0 local runtime and its security boundaries remain unchanged. This section defines the next reader interface; it does not claim device access, Google Drive indexing, Cloudflare deployment, or live cross-provider search has already been enabled.
+> **This README.md IS the searchable index.** It is not a specification pointing to `index.html`. The separately served HTML landing page is an independent interface and is **not** required to browse this index. GitHub renders the directory tables, anchors, hyperlinks, and keyword text below directly inside its README viewer. Browser **Find in page** searches the rendered index; GitHub repository/code search searches content beyond the entries shown here. GitHub does not execute custom JavaScript inside README files, so dropdowns and live client-side sorting cannot run here.
 
-The **UNIOMNI Search Reader** brings the searchable in-chat index pattern to a standalone HTML reader: one query box, source-specific filters, sortable results, direct `href` links, and evidence/provenance labels. The README is the documentation and navigation surface; **interactive JavaScript runs in the reader page, not inside GitHub's README renderer**.
+### 🔎 Search this index
 
-### Proposed page structure
+**Find in this README:** use your browser's Find command (Ctrl+F / Find in page) for any filename, directory, phrase, extension, source, or evidence term. **Filter by category:** use the linked sections. **Search repository content:** follow the GitHub search links below. The tables are arranged by source and filename for predictable scanning; column-header sorting is not supported in GitHub Markdown.
 
-| Path | Role | Status |
+| Search target | Open search |
+| --- | --- |
+| All repository code | [Search ideal-enigma](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma&type=code) |
+| Verification / evidence | [verified OR proof](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+%28verified+OR+proof%29&type=code) |
+| Hash / integrity | [SHA-256](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+SHA-256&type=code) |
+| Hidden dotfile names | [Dotfile path search](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A.*&type=code) |
+| Markdown documents | [*.md paths](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A*.md&type=code) |
+| JavaScript | [*.js paths](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A*.js&type=code) |
+| Python | [*.py paths](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A*.py&type=code) |
+| All repository files | [GitHub file tree](https://github.com/machackabook/ideal-enigma/tree/main) |
+
+**Jump to:** [Repository files](#repository-file-directory) · [Runtime and vault](#runtime-and-vault-paths) · [Cloud and memory](#cloud-and-memory-source-directory) · [Evidence keywords](#verification-keyword-index) · [Discovery coverage](#discovery-coverage-and-privacy) · [HTML distinction](#readme-versus-html-separate-targets).
+
+### Repository file directory
+
+These are **direct file/directory navigation links inferred from the existing Stage 0 README**. The README documents these paths; this table does not assert that every linked path was individually fetched and byte-verified in this indexing pass.
+
+| Name / path | Kind | Keywords / function | Link | Evidence |
+| --- | --- | --- | --- | --- |
+| `README.md` | Markdown | index, documentation, search, source | [Open](./README.md) | **Fetched and updated** |
+| `UNIOMNI_STAGE0.sh` | Shell | installer, bootstrap, serve, stage0 | [Open](./UNIOMNI_STAGE0.sh) | Documented path |
+| `layers/manifest.json` | JSON | layers, byte count, SHA-256, provenance | [Open](./layers/manifest.json) | Documented path |
+| `docs/GAIA_MEMORY_HANDOFF.json` | JSON | MCP, memory, handoff, authentication | [Open](./docs/GAIA_MEMORY_HANDOFF.json) | Documented path |
+| `docs/capabilities.json` | JSON | connectors, availability, catalog | [Open](./docs/capabilities.json) | Documented path |
+| `tools/extensions.py` | Python | Koopman, Mathematica, optional extension | [Open](./tools/extensions.py) | Documented path |
+| `tools/package.py` | Python | build, monolith, packaging | [Open](./tools/package.py) | Documented path |
+| `tools/verify.py` | Python | verify, validation, integrity | [Open](./tools/verify.py) | Documented path |
+| `tests/` | Directory | tests, unittest, verification | [Browse](./tests/) | Documented path |
+| `cloudflare/wrangler.jsonc` | Config | Cloudflare Worker, deploy, configuration | [Open](./cloudflare/wrangler.jsonc) | Documented path |
+
+### Runtime and vault paths
+
+These are **local device paths**, not public GitHub hyperlinks and not proof that any remote device was scanned.
+
+| Local path / command | Type | Search terms | Visibility |
+| --- | --- | --- | --- |
+| `$HOME/Æ/uniomni` or `UNIOMNI_HOME` | Runtime directory | state, notes, logs, ledger | Local/private |
+| `$HOME/Æ/uniomni/vault` (vault location as configured) | Knowledge directory | Obsidian, Markdown, notes | Local/private |
+| `$AE/bin/uniomni` | CLI | command, launcher | Local/private |
+| `$AE/autonomous` | Installer archive location | SS, bootstrap, preservation | Local/private |
+| `uniomni cycle` | Command | Observe, Digest, Integrate, Stabilize, Shed | Local execution |
+| `uniomni verify` | Command | checks, hash, ledger | Local execution |
+| `uniomni watch --interval 90` | Command | monitoring, refresh | Local execution |
+
+### Cloud and memory source directory
+
+These are **navigation references**, not a public export of private Drive files or evidence of a live synchronized database.
+
+| Provider / source | Search terms | Link | State |
+| --- | --- | --- | --- |
+| GitHub repository | code, commit, directory, README | [ideal-enigma](https://github.com/machackabook/ideal-enigma) | Repository located; README writable |
+| GitHub history | commit, audit, change, lineage | [Commits](https://github.com/machackabook/ideal-enigma/commits/main/) | Navigation link |
+| GitHub workflows | CI, tests, build, verified | [Actions](https://github.com/machackabook/ideal-enigma/actions) | Navigation link; no run claim |
+| GAIA Memory Portal | memory, notes, knowledge | [Portal](https://gaia-memory-portal.machackabook.chatgpt.site) | External service; auth independent |
+| GAIA Memory Bridge | bridge, MCP, identity | [Bridge](https://gaia-nexus-memory-bridge.machackabook.chatgpt.site) | External service; auth independent |
+| Cloudflare | Workers, Pages, deploy | [Project configuration](./cloudflare/wrangler.jsonc) | Documented source path |
+| Google Drive | files, folders, documents, provenance | [Drive](https://drive.google.com/drive/u/0/my-drive) | **User-authenticated navigation only**; no public file inventory |
+| Device directories | Termux, Crostini, dotfiles, filesystem | Local authorized scanner (not yet integrated into README) | **Not scanned remotely** |
+
+### Verification keyword index
+
+Use browser Find or [GitHub code search](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma&type=code) with these indexed terms:
+
+| Category | Search keywords / phrases |
+| --- | --- |
+| Validation | verified, verify, verification, validated, valid, validity, confirmed, confirmation, cross-verified, tested, passed, accepted, certified |
+| Proof | proof, proven, evidence, corroborated, substantiated, documented, witnessed, reproducible, source of truth, chain of custody |
+| Agreement | agreed, agreement, consensus, concurrence, acknowledged, affirmed, authorized, approved, signed off, ratified |
+| Security | SHA-256, checksum, hash match, signature, integrity, authenticity, provenance, attestation, certificate, authenticated, tamper-evident |
+| Engineering | CI green, build succeeded, test passed, heartbeat, operational, release, quality assurance, peer review, gate passed |
+| Visual | checkmark, green tick, verified badge, certificate, audit stamp, seal of approval, status dashboard, signed receipt |
+| File discovery | .md, .json, .js, .py, .sh, .html, .css, dotfile, hidden, directory, symlink, MIME, bytes, modified |
+
+**Evidence levels:** discovered ≠ matched ≠ corroborated ≠ validated ≠ authenticated ≠ verified. A word or badge is never proof by itself. `SHA-256` in a description does not mean that this index independently recomputed the file's hash.
+
+### Discovery coverage and privacy
+
+| Source | Indexed here | Live automatic sync | Boundary |
+| --- | --- | --- | --- |
+| Existing README | Yes, actual navigable Markdown entries | No | Public |
+| Repository files | Documented file links and GitHub search entry points | GitHub navigation, not an index crawler | Public repository |
+| GitHub account-wide discovery | Not exported into this README | No | Private repositories excluded |
+| Google Drive | Provider link only | No | Requires scoped consent and publication review |
+| Device / Termux / Crostini | Documented local path labels | No | No remote scan or dotfile disclosure |
+| Obsidian vault | Path and command references | No | Local/private |
+| Cloudflare | Configuration path and service references | No | No deployment claimed |
+
+**Publishing rule:** only deliberately approved, public metadata may be inserted into this README. Never publish tokens, private repository names, private Drive records, hidden-file contents, device identifiers, full home-directory paths, or sensitive logs. A future index refresh may update Markdown tables through a reviewed, least-privilege commit, with a timestamp and provenance record.
+
+### README versus HTML: separate targets
+
+| Surface | Purpose | Execution |
 | --- | --- | --- |
-| `README.md` | Entry point, documentation, linked discovery catalog | Existing; this specification added |
-| `reader/index.html` | Responsive searchable HTML reader and accessibility-friendly controls | Planned |
-| `reader/app.js` | Client-side filtering, sorting, pagination, URL query state, safe link rendering | Planned |
-| `reader/styles.css` | Mobile/desktop responsive presentation | Planned |
-| `reader/index.json` | **Public-only** approved metadata snapshot, never credentials or private vault contents | Planned |
-| `tools/build_search_index.py` | Bounded, opt-in, read-only source normalization and index export | Planned |
-| `docs/SEARCH_SCHEMA.md` | Record schema, source authority, verification semantics and redaction policy | Planned |
+| **`README.md` — THIS SEARCH INDEX** | Native searchable Markdown directory, anchors, source links, keyword tables, provider filters by section, GitHub search queries | **Works in GitHub's README viewer now**, without HTML or JavaScript |
+| `index.html` / existing UNIOMNI landing page | Separate visual application, runtime interaction, advanced filters, local authentication | Runs only when its own web server/deployment is available |
+| Optional future `reader/` | Independent richer UI, if explicitly requested | **Not required** for the README index |
 
-Do **not** replace the existing installer, `$HOME/Æ/uniomni` vault, Stage 0 ledger, or local authenticated server. The reader should be added alongside them. If a website already serves another entry point, link the reader at `/reader/` rather than overwriting it.
-
-### Search and filter controls
-
-- **Full-text / keyword:** name, title, path, description, tags, file extension, MIME type, source provider, exact phrase, verification terminology (verified, validated, attested, authenticated, approved, confirmed, corroborated, proof, signature, integrity), and case-insensitive matching.
-- **Source:** local authorized device snapshot, GitHub, Google Drive, project files, Obsidian vault, and any separately authorized adapter; unavailable providers must be labeled *not connected*, not silently searched.
-- **Filesystem:** directory prefix, recursion depth, files versus directories, extension, hidden dotfiles (explicit opt-in), symlinks (never followed by default), file size, creation/modification dates when available, and duplicate hashes.
-- **Code and cloud:** repository, branch, commit, file path, language, GitHub visibility, CI status, Drive folder, document type, and sharing scope.
-- **Evidence:** discovered, matched, corroborated, validated, authenticated, verified, failed, stale, or unverified; each result explains the specific claim and check rather than assigning a generic green check.
-- **Sorting:** name, source, directory, extension, size, timestamp, relevance, verification status, and hash; ascending/descending.
-- **Display:** list/table, result count, source badges, mobile-friendly details, copy path/URL, stable anchors, pagination, empty/error states, and keyboard-accessible controls.
-
-### Discovery adapters and boundaries
-
-| Adapter | Intended discovery | Security boundary |
-| --- | --- | --- |
-| Device / Termux / Crostini | Explicitly selected directories, metadata, permitted hashes and optional dotfile names | Local-only by default; no root escalation; no unrestricted filesystem traversal; redact usernames, home paths and secrets before publishing |
-| GitHub | Repositories the authenticated account can read; branches, paths, commits and links | Private repository metadata stays private; public reader includes only public allowlisted records |
-| Google Drive | Files/folders selected through OAuth scopes or an authenticated connector | No borrowed ChatGPT credentials; private Drive documents never appear in a public JSON index |
-| Existing UNIOMNI vault | Indexed notes and source receipts | Keep content on the local authenticated endpoint unless explicitly exported |
-| Cloudflare | Host approved static reader assets and optionally a scoped API | Deploy only after the account/project and authorization are confirmed; do not expose access tokens in frontend code |
-
-**Index records** should carry `id`, `title`, `kind`, `source`, `path_display`, `href`, `visibility`, `tags`, `size_bytes`, `modified_at`, `sha256` (when actually computed), `evidence_status`, `verification_method`, `verified_at`, and `retrieved_at`. Unknown values remain null or omitted, never guessed. Prefer provider-issued IDs and canonical HTTPS URLs; reject unsafe schemes such as `javascript:` when rendering links. Treat remote titles and snippets as untrusted text, not executable HTML.
-
-### Verification and indexing workflow
-
-1. **Discover:** request read-only metadata from each individually authorized source; record source identity, scope and retrieval time.
-2. **Normalize:** map records to the common schema, preserving original provider identifiers and byte-level provenance where available.
-3. **Protect:** exclude secrets, tokens, private files, sensitive device details, and private account records from any public export.
-4. **Validate:** compute SHA-256 only for bytes actually read; distinguish a matching hash from authenticated authorship or verified functionality.
-5. **Index:** deduplicate by provider ID or content hash where justified, retain separate source references, and write an atomic public snapshot.
-6. **Render:** load the snapshot in the reader, filter and sort locally, and open canonical source `href` links.
-7. **Refresh:** update through explicit user action or a separately authorized scheduled job; show stale/offline states rather than claiming a live connection.
-
-### Reader entry points
-
-- [Repository README](./README.md) — current documentation and implementation status.
-- [Proposed reader directory](./reader/) — **not available until committed**.
-- [GAIA memory portal](https://gaia-memory-portal.machackabook.chatgpt.site) — separate service with its own authentication.
-- [Cloudflare Pages Git integration documentation](https://developers.cloudflare.com/pages/configuration/git-integration/) — deployment reference, not proof of an active Pages project.
-
-**Acceptance gates:** reader loads without credentials; search/filter/sort and deep links work on a fixture; malicious titles render as text; empty/failed adapters show honest status; dotfiles remain opt-in; private records never enter public artifacts; all exported hash and verification claims are reproducible. Deployment and integration remain **pending** until these gates pass.
+**README acceptance check:** repository README renders the directory tables; anchors navigate within the README; links open their stated targets when those files exist; Find in page finds indexed phrases; GitHub search links open repository-scoped searches. Advanced live sorting, provider API querying and filesystem scanning are **not** GitHub README capabilities and are not falsely represented as active.
 
 Copyright: The Architect / Nexus / Cryptic News LLC / Project: The Nexus Generation: GaiaSSoul / SERIES: The Nexus of Gaia / ID: 137451921129154222|040592|433855274. Upstream layers retain their own notices. No blanket license for all Ghisler plugins is asserted.
