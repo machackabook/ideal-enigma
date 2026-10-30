@@ -1,5 +1,21 @@
 # UNIOMNI Stage 0 · v1.0.0
 
+## 🔎 SEARCH UNIOMNI — README index entry
+
+**[⌕ TAP HERE TO TYPE A SEARCH QUERY — IDEAL-ENIGMA](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma&type=code)**
+
+> **Search input:** the link opens GitHub's real, typeable search box already scoped to this repository. Enter a filename, keyword, exact phrase, extension, or code symbol and press Enter. This requires no custom JavaScript. GitHub README Markdown itself cannot host a functioning text-input/filter widget; an HTML `<input>` placed here would be inert or sanitized, so this index does not pretend otherwise.
+
+**Find in this page:** use **Find in page** (mobile browser menu or Ctrl+F) to type a term and search the actual README records below.
+
+**Quick query links:** [All files](https://github.com/machackabook/ideal-enigma/tree/main) · [Verified / proof](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+verified&type=code) · [SHA-256](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+SHA-256&type=code) · [Dotfiles](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A.*&type=code) · [Markdown](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A*.md&type=code) · [Python](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A*.py&type=code) · [JavaScript](https://github.com/search?q=repo%3Amachackabook%2Fideal-enigma+path%3A*.js&type=code)
+
+**Browse indexed records:** [File directory](#repository-file-directory) · [Local vault](#runtime-and-vault-paths) · [Cloud sources](#cloud-and-memory-source-directory) · [Verification terms](#verification-keyword-index) · [Coverage](#discovery-coverage-and-privacy).
+
+**Target separation:** **README.md = primary searchable Markdown catalog**; `index.html` = separate runtime/web application, never a prerequisite for README search.
+
+---
+
 Observe → Digest → Integrate → Stabilize → Shed.
 
 A real local runtime and single-file SS installer for Crostini/Linux, macOS and Termux with Python 3.10+. Native Windows can run the Python CLI; the Bash installer needs WSL/Git Bash. No root, partition changes, or consumer-device rooting.
