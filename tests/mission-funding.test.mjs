@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   MISSION_WEIGHTS_BPS,
+  FUNDING_POLICY_STATUS,
   allocateMissionFunding,
   normalizeMiningSettlement,
   verifyAndAllocateMiningSettlement
@@ -21,7 +22,8 @@ const receipt = (overrides = {}) => ({
   ...overrides
 });
 
-test("mission weights sum to exactly 10000 basis points", () => {
+test("mission weights sum to exactly 10000 basis points and remain proposed", () => {
+  assert.equal(FUNDING_POLICY_STATUS, "proposed");
   assert.equal(Object.values(MISSION_WEIGHTS_BPS).reduce((a, b) => a + b, 0), 10000);
 });
 
@@ -79,6 +81,7 @@ test("returns verified allocation only after verifier confirms chain evidence", 
     };
   });
   assert.equal(result.verification.status, "verified");
+  assert.equal(result.policyStatus, "proposed");
   assert.equal(result.transferStatus, "not_transferred");
   assert.equal(result.allocations.reduce((sum, row) => sum + BigInt(row.amountAtomic), 0n), 99000000n);
 });
