@@ -17,6 +17,34 @@ jobs:
       - run: python3 tools/verify.py
       - run: python3 -m unittest discover -s tests -v
       - run: node --check runtime/app.js && node --check cloudflare/worker.mjs
+      - name: CRYPTIC Atlas and ADAM JavaScript syntax
+        run: |
+          node --check cloudflare/cryptic-atlas/worker.mjs
+          node --check tools/adam/repo-audit.mjs
+          node --check src/cryptic/unbound-inverse.mjs
+          node --check src/cryptic/dualtrace.mjs
+          node --check src/cryptic/mission-funding.mjs
+      - name: CRYPTIC Atlas policy and HCCGN tests
+        run: node --test tests/cryptic-atlas.test.mjs
+      - name: ADAM repository audit tests
+        run: node --test tests/adam-repo-audit.test.mjs
+      - name: DUALTRACE and inverse verification tests
+        run: node --test tests/dualtrace.test.mjs
+      - name: Atlas mission funding tests
+        run: node --test tests/mission-funding.test.mjs
+      - name: Atlas D1 schema validation
+        run: |
+          python3 - <<'PY'
+          import pathlib, sqlite3
+          db = sqlite3.connect(":memory:")
+          db.executescript(pathlib.Path("cloudflare/cryptic-atlas/migrations/0001_init.sql").read_text())
+          names = {r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+          required = {"atlas_ledger_head","atlas_run_lock","atlas_manifests","atlas_runs","atlas_sources","atlas_events","atlas_skips","atlas_blocks"}
+          assert required <= names, required - names
+          print("D1 migration schema OK:", len(required), "tables")
+          PY
+      - name: Atlas search manifest validation
+        run: python3 -m json.tool manifests/cryptic-atlas-search-manifest.json > /dev/null
       - run: bash -n UNIOMNI_STAGE0.sh
       - name: Isolated installer smoke test
         run: AE="$RUNNER_TEMP/uniomni-ae" HOME="$RUNNER_TEMP/uniomni-home" bash UNIOMNI_STAGE0.sh
