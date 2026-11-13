@@ -97,3 +97,7 @@ The supplied note says the modulus is necessary before computing the modular inv
 **Index maintenance:** update this file when a source is inspected, mapped to code, validated, or intentionally excluded. Preserve the distinction between `received`, `read`, `implemented`, `tested`, and `deployed`.
 
 **The Architect / Nexus / Cryptic News LLC / Project: The Nexus Generation: GaiaSSoul / SERIES: The Nexus of Gaia / ID: 137451921129154222|040592|433855274**
+
+
+### Atlas mission commitments and mining-funded allocation
+The new [mission funding policy](./CRYPTIC_ATLAS_MISSION_FUNDING.md) assigns versioned allocation weights to the six public-benefit missions. The [funding module](../src/cryptic/mission-funding.mjs) requires an injected independent chain verifier, subtracts declared fees using integer atomic units, and allocates verified net proceeds without rounding loss. Its tests are in [mission-funding.test.mjs](../tests/mission-funding.test.mjs). This is not a miner, custody wallet, transfer system, or guarantee of funding.
