@@ -1,0 +1,220 @@
+{
+  "manifestId": "cryptic-atlas-search-v1",
+  "version": "1.0.0",
+  "mission": [
+    "food_security",
+    "economic_inclusion",
+    "resource_coordination",
+    "accessibility",
+    "public_accountability",
+    "foundational_research"
+  ],
+  "queryTerms": {
+    "food_security": [
+      "food insecurity",
+      "food access",
+      "nutrition assistance",
+      "food bank",
+      "community pantry",
+      "food distribution",
+      "surplus food",
+      "food recovery",
+      "food waste",
+      "food affordability"
+    ],
+    "economic_inclusion": [
+      "household income",
+      "poverty",
+      "unemployment",
+      "living wage",
+      "benefit access",
+      "financial inclusion",
+      "cost of living",
+      "economic mobility"
+    ],
+    "resource_coordination": [
+      "local production",
+      "supply chain resilience",
+      "transport logistics",
+      "inventory availability",
+      "spoilage reduction",
+      "community resources",
+      "resource utilization"
+    ],
+    "accessibility": [
+      "digital accessibility",
+      "screen reader",
+      "keyboard navigation",
+      "plain language",
+      "language access",
+      "disability inclusion",
+      "service accessibility"
+    ],
+    "public_accountability": [
+      "public spending",
+      "program outcomes",
+      "delivery verification",
+      "open data",
+      "public reporting",
+      "audit trail"
+    ]
+  },
+  "sourceTypes": [
+    "public_agency",
+    "intergovernmental",
+    "nonprofit",
+    "research",
+    "dataset",
+    "public_api",
+    "standards",
+    "community_resource"
+  ],
+  "initialSeeds": [
+    {
+      "url": "https://www.ers.usda.gov/data-products/food-access-research-atlas",
+      "mission": "food_security",
+      "sourceType": "public_agency",
+      "license": "unknown"
+    },
+    {
+      "url": "https://www.fns.usda.gov/",
+      "mission": "food_security",
+      "sourceType": "public_agency",
+      "license": "unknown"
+    },
+    {
+      "url": "https://www.feedingamerica.org/research/map-the-meal-gap",
+      "mission": "food_security",
+      "sourceType": "nonprofit",
+      "license": "unknown"
+    },
+    {
+      "url": "https://arkansasfoodbank.org/",
+      "mission": "food_security",
+      "sourceType": "community_resource",
+      "license": "unknown"
+    },
+    {
+      "url": "https://www.census.gov/",
+      "mission": "economic_inclusion",
+      "sourceType": "public_agency",
+      "license": "unknown"
+    },
+    {
+      "url": "https://www.bls.gov/",
+      "mission": "economic_inclusion",
+      "sourceType": "public_agency",
+      "license": "unknown"
+    },
+    {
+      "url": "https://www.epa.gov/sustainable-management-food",
+      "mission": "resource_coordination",
+      "sourceType": "public_agency",
+      "license": "unknown"
+    },
+    {
+      "url": "https://www.wfp.org/",
+      "mission": "food_security",
+      "sourceType": "intergovernmental",
+      "license": "unknown"
+    },
+    {
+      "url": "https://www.fao.org/",
+      "mission": "food_security",
+      "sourceType": "intergovernmental",
+      "license": "unknown"
+    },
+    {
+      "url": "https://www.worldbank.org/",
+      "mission": "economic_inclusion",
+      "sourceType": "intergovernmental",
+      "license": "unknown"
+    }
+  ],
+  "timeWindow": {
+    "mode": "latest_available",
+    "preserveUnknownDates": true
+  },
+  "geography": [
+    "global",
+    "United States",
+    "Arkansas"
+  ],
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "ar",
+    "pt",
+    "zh",
+    "hi"
+  ],
+  "depth": {
+    "maxDepth": 1,
+    "maxPagesPerRun": 24,
+    "maxPagesPerHost": 4,
+    "maxLinksPerPage": 40,
+    "maxBytesPerPage": 256000
+  },
+  "rateLimit": {
+    "concurrency": 1,
+    "minDelayMsPerHost": 1500,
+    "maxRetries": 2,
+    "retryableStatuses": [
+      429,
+      503
+    ],
+    "respectRetryAfter": true
+  },
+  "freshness": {
+    "cadence": "daily",
+    "useEtag": true,
+    "useLastModified": true,
+    "retainFirstSeen": true
+  },
+  "quality": [
+    "source_provenance",
+    "primary_source_status",
+    "completeness",
+    "corroboration",
+    "uncertainty",
+    "contradictions",
+    "bias_notes"
+  ],
+  "accessibility": [
+    "semantic_structure",
+    "keyboard_access",
+    "screen_reader_labels",
+    "alt_text",
+    "captions",
+    "transcripts",
+    "plain_language",
+    "reduced_motion",
+    "contrast"
+  ],
+  "outcomeMetrics": [
+    "aggregate_food_insecurity_estimate",
+    "food_recovery_volume",
+    "spoilage_rate",
+    "delivery_completion_rate",
+    "resource_availability",
+    "service_accessibility_defects_resolved"
+  ],
+  "retention": {
+    "storeRawContent": false,
+    "storeMetadata": true,
+    "storeSha256": true,
+    "republishSourceContent": false,
+    "retentionDays": 365
+  },
+  "exclusions": [
+    "private_profiles",
+    "recipient_level_records",
+    "credentials",
+    "cookies",
+    "authenticated_content",
+    "paywalled_content",
+    "robots_disallowed_paths"
+  ],
+  "coverageDisclaimer": "A bounded allowlist crawl is not exhaustive web coverage; inaccessible pages and skipped traversal positions must be reported."
+}

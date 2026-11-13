@@ -76,7 +76,6 @@ The public Cloudflare Worker is a separate source/download landing page and heal
 
 Build the reviewed monolith: `python3 tools/package.py`; verify: `python3 tools/verify.py`; test: `python3 -m unittest discover -s tests -v`. Keep the Git commit and release hash externally as your trust anchor. A self-contained embedded hash detects accidental corruption, not an attacker who rewrites both payload and hash.
 
-
 ## UNIOMNI README Search Index — live Markdown directory
 
 > **This README.md IS the searchable index.** It is not a specification pointing to `index.html`. The separately served HTML landing page is an independent interface and is **not** required to browse this index. GitHub renders the directory tables, anchors, hyperlinks, and keyword text below directly inside its README viewer. Browser **Find in page** searches the rendered index; GitHub repository/code search searches content beyond the entries shown here. GitHub does not execute custom JavaScript inside README files, so dropdowns and live client-side sorting cannot run here.
@@ -185,3 +184,65 @@ Use browser Find or [GitHub code search](https://github.com/search?q=repo%3Amach
 **README acceptance check:** repository README renders the directory tables; anchors navigate within the README; links open their stated targets when those files exist; Find in page finds indexed phrases; GitHub search links open repository-scoped searches. Advanced live sorting, provider API querying and filesystem scanning are **not** GitHub README capabilities and are not falsely represented as active.
 
 Copyright: The Architect / Nexus / Cryptic News LLC / Project: The Nexus Generation: GaiaSSoul / SERIES: The Nexus of Gaia / ID: 137451921129154222|040592|433855274. Upstream layers retain their own notices. No blanket license for all Ghisler plugins is asserted.
+
+
+## Project source index — Hamiltonian Test / GAIA-NEXUS
+
+The [Project Source Index](./docs/PROJECT_SOURCE_INDEX.md) catalogs the supplied project specifications, their repository destinations, implementation status, unresolved source questions, and publication boundaries. It distinguishes received, read, implemented, tested, and deployed artifacts; it does not publish private access-control material or claim uninspected ZIP contents.
+
+## CRYPTIC Atlas CCA — mission-directed public research
+
+**The promise:** preserve the original commitment, record every stride and skip, independently verify transformations, and measure positive outcomes. The Atlas adds a bounded HarvesterWebOmni Worker, HCCGN block lineage, a searchable mission manifest, CCA accessibility requirements, and a D1 provenance ledger. Its initial missions are food security, economic inclusion, resource coordination, accessibility, and public accountability.
+
+- [CRYPTIC Atlas architecture and status](./docs/CRYPTIC_ATLAS_CCA.md)
+- [HarvesterWebOmni Worker and deployment gate](./cloudflare/cryptic-atlas/README.md)
+- [Search manifest](./manifests/cryptic-atlas-search-manifest.json)
+- [D1 migration](./cloudflare/cryptic-atlas/migrations/0001_init.sql)
+- [Atlas verification workflow](./.github/workflows/cryptic-atlas.yml)
+- [Private CCA plugin](https://chatgpt.com/plugins/plugins_6af73a35b32481918ff7d2df2616af1c)
+
+The crawler is deliberately bounded to HTTPS exact-host allowlists, robots.txt permissions, and per-run limits. It does not expose private GAIA memory or store raw source-page bodies. The Cloudflare deployment remains gated on approval of a dedicated D1 database; existing Pages Sentinel routes and schedules are not changed.
+
+
+## ADAM Gate 0 — repository audit and provenance
+
+The repository now includes a read-only ADAM inventory CLI. It records relative file paths, byte counts, SHA-256 commitments for files within the configured size limit, symlink metadata without following targets, and Git branch/HEAD/working-tree metadata when Git is available. It does not execute repository code, contact remote services, or copy file contents into its report.
+
+- [ADAM repository governance and four-gate lifecycle](./docs/ADAM_REPOSITORY_GOVERNANCE.md)
+- [Read-only repository audit CLI](./tools/adam/repo-audit.mjs)
+- [ADAM audit safety tests](./tests/adam-repo-audit.test.mjs)
+
+Run from the repository root:
+
+```bash
+node tools/adam/repo-audit.mjs --repo-root .
+node tools/adam/repo-audit.mjs --repo-root . --write .adam/repository-audit.json
+```
+
+Report writing is opt-in, confined to the repository, and does not overwrite an existing report unless `--force` is supplied. The audit is Gate 0 (OBSERVE); proposals, validation, and promotion remain separate gates. SHA-256 proves byte identity only, not authorship or truth.
+
+
+## AE.SL6.DUALTRACE.4P — pair-local inverse verification
+
+- [Four-lane DUALTRACE specification](./docs/AE_SL6_DUALTRACE_4P.md)
+- [Unbound inverse verifier](./src/cryptic/unbound-inverse.mjs)
+- [Four-lane contracts and pair validation](./src/cryptic/dualtrace.mjs)
+- [DUALTRACE test suite](./tests/dualtrace.test.mjs)
+
+The implementation checks supplied forward/inverse identities and validates independent lane tickets, pair metadata, signed polarity, and residual tolerance. It does not claim a scheduler, universal invertibility, or hardware execution.
+
+## Research and platform boundaries
+
+- [Quantum uncloneability research note](./docs/QUANTUM_UNCLONEABILITY_RESEARCH.md) — research-only; supplied excerpt is incomplete and does not define an implementable quantum-money protocol.
+- [AE.SOVEREIGN.OS / AE.AXS.POLYGLOT Phase 2 boundary](./docs/AE_SOVEREIGN_OS_PHASE2_BOUNDARY.md) — shared contracts and interface requirements; no bootable OS is claimed.
+
+
+## CRYPTIC Atlas mission commitments and mining-funded allocation
+
+Atlas uses a versioned public-benefit allocation policy for **verified, settled** external mining proceeds: food security 35%, economic inclusion 20%, resource coordination 15%, accessibility 15%, public accountability 10%, and foundational research 5%. Allocation uses integer atomic units and deterministic largest-remainder arithmetic, so every allocated unit reconciles to the verified net receipt.
+
+- [Mission commitments and mining-funded allocation policy](./docs/CRYPTIC_ATLAS_MISSION_FUNDING.md)
+- [Settlement verifier and allocation module](./src/cryptic/mission-funding.mjs)
+- [Funding policy tests](./tests/mission-funding.test.mjs)
+
+This is an accounting and verification component, not a deployed miner or treasury. It does not hold keys, mine, submit transactions, or transfer funds. A chain-specific independent verifier must establish transaction inclusion and finality. Mining revenue, profitability, and social outcomes are never guaranteed; operating costs and outcome evidence must be reported separately.
