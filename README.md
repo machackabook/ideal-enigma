@@ -76,7 +76,6 @@ The public Cloudflare Worker is a separate source/download landing page and heal
 
 Build the reviewed monolith: `python3 tools/package.py`; verify: `python3 tools/verify.py`; test: `python3 -m unittest discover -s tests -v`. Keep the Git commit and release hash externally as your trust anchor. A self-contained embedded hash detects accidental corruption, not an attacker who rewrites both payload and hash.
 
-
 ## UNIOMNI README Search Index — live Markdown directory
 
 > **This README.md IS the searchable index.** It is not a specification pointing to `index.html`. The separately served HTML landing page is an independent interface and is **not** required to browse this index. GitHub renders the directory tables, anchors, hyperlinks, and keyword text below directly inside its README viewer. Browser **Find in page** searches the rendered index; GitHub repository/code search searches content beyond the entries shown here. GitHub does not execute custom JavaScript inside README files, so dropdowns and live client-side sorting cannot run here.
@@ -199,3 +198,21 @@ Copyright: The Architect / Nexus / Cryptic News LLC / Project: The Nexus Generat
 - [Private CCA plugin](https://chatgpt.com/plugins/plugins_6af73a35b32481918ff7d2df2616af1c)
 
 The crawler is deliberately bounded to HTTPS exact-host allowlists, robots.txt permissions, and per-run limits. It does not expose private GAIA memory or store raw source-page bodies. The Cloudflare deployment remains gated on approval of a dedicated D1 database; existing Pages Sentinel routes and schedules are not changed.
+
+
+## ADAM Gate 0 — repository audit and provenance
+
+The repository now includes a read-only ADAM inventory CLI. It records relative file paths, byte counts, SHA-256 commitments for files within the configured size limit, symlink metadata without following targets, and Git branch/HEAD/working-tree metadata when Git is available. It does not execute repository code, contact remote services, or copy file contents into its report.
+
+- [ADAM repository governance and four-gate lifecycle](./docs/ADAM_REPOSITORY_GOVERNANCE.md)
+- [Read-only repository audit CLI](./tools/adam/repo-audit.mjs)
+- [ADAM audit safety tests](./tests/adam-repo-audit.test.mjs)
+
+Run from the repository root:
+
+```bash
+node tools/adam/repo-audit.mjs --repo-root .
+node tools/adam/repo-audit.mjs --repo-root . --write .adam/repository-audit.json
+```
+
+Report writing is opt-in, confined to the repository, and does not overwrite an existing report unless `--force` is supplied. The audit is Gate 0 (OBSERVE); proposals, validation, and promotion remain separate gates. SHA-256 proves byte identity only, not authorship or truth.
