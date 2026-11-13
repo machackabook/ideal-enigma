@@ -4,6 +4,7 @@
  * This module does not mine, hold keys, submit transactions, or move funds.
  */
 export const FUNDING_POLICY_VERSION = "cryptic.atlas.mission-funding.v1";
+export const FUNDING_POLICY_STATUS = "proposed";
 
 export const MISSION_WEIGHTS_BPS = Object.freeze({
   food_security: 3500,
@@ -132,6 +133,7 @@ export async function verifyAndAllocateMiningSettlement(receipt, verifyOnChain) 
   return Object.freeze({
     schema: "cryptic.atlas.funding-allocation.v1",
     policyVersion: FUNDING_POLICY_VERSION,
+    policyStatus: FUNDING_POLICY_STATUS,
     verification: Object.freeze({
       status: "verified",
       confirmations: proof.confirmations,
