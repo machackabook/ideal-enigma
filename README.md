@@ -235,3 +235,14 @@ The implementation checks supplied forward/inverse identities and validates inde
 
 - [Quantum uncloneability research note](./docs/QUANTUM_UNCLONEABILITY_RESEARCH.md) — research-only; supplied excerpt is incomplete and does not define an implementable quantum-money protocol.
 - [AE.SOVEREIGN.OS / AE.AXS.POLYGLOT Phase 2 boundary](./docs/AE_SOVEREIGN_OS_PHASE2_BOUNDARY.md) — shared contracts and interface requirements; no bootable OS is claimed.
+
+
+## CRYPTIC Atlas mission commitments and mining-funded allocation
+
+Atlas uses a versioned public-benefit allocation policy for **verified, settled** external mining proceeds: food security 35%, economic inclusion 20%, resource coordination 15%, accessibility 15%, public accountability 10%, and foundational research 5%. Allocation uses integer atomic units and deterministic largest-remainder arithmetic, so every allocated unit reconciles to the verified net receipt.
+
+- [Mission commitments and mining-funded allocation policy](./docs/CRYPTIC_ATLAS_MISSION_FUNDING.md)
+- [Settlement verifier and allocation module](./src/cryptic/mission-funding.mjs)
+- [Funding policy tests](./tests/mission-funding.test.mjs)
+
+This is an accounting and verification component, not a deployed miner or treasury. It does not hold keys, mine, submit transactions, or transfer funds. A chain-specific independent verifier must establish transaction inclusion and finality. Mining revenue, profitability, and social outcomes are never guaranteed; operating costs and outcome evidence must be reported separately.
