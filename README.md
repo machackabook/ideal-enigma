@@ -185,3 +185,17 @@ Use browser Find or [GitHub code search](https://github.com/search?q=repo%3Amach
 **README acceptance check:** repository README renders the directory tables; anchors navigate within the README; links open their stated targets when those files exist; Find in page finds indexed phrases; GitHub search links open repository-scoped searches. Advanced live sorting, provider API querying and filesystem scanning are **not** GitHub README capabilities and are not falsely represented as active.
 
 Copyright: The Architect / Nexus / Cryptic News LLC / Project: The Nexus Generation: GaiaSSoul / SERIES: The Nexus of Gaia / ID: 137451921129154222|040592|433855274. Upstream layers retain their own notices. No blanket license for all Ghisler plugins is asserted.
+
+
+## CRYPTIC Atlas CCA — mission-directed public research
+
+**The promise:** preserve the original commitment, record every stride and skip, independently verify transformations, and measure positive outcomes. The Atlas adds a bounded HarvesterWebOmni Worker, HCCGN block lineage, a searchable mission manifest, CCA accessibility requirements, and a D1 provenance ledger. Its initial missions are food security, economic inclusion, resource coordination, accessibility, and public accountability.
+
+- [CRYPTIC Atlas architecture and status](./docs/CRYPTIC_ATLAS_CCA.md)
+- [HarvesterWebOmni Worker and deployment gate](./cloudflare/cryptic-atlas/README.md)
+- [Search manifest](./manifests/cryptic-atlas-search-manifest.json)
+- [D1 migration](./cloudflare/cryptic-atlas/migrations/0001_init.sql)
+- [Atlas verification workflow](./.github/workflows/cryptic-atlas.yml)
+- [Private CCA plugin](https://chatgpt.com/plugins/plugins_6af73a35b32481918ff7d2df2616af1c)
+
+The crawler is deliberately bounded to HTTPS exact-host allowlists, robots.txt permissions, and per-run limits. It does not expose private GAIA memory or store raw source-page bodies. The Cloudflare deployment remains gated on approval of a dedicated D1 database; existing Pages Sentinel routes and schedules are not changed.
