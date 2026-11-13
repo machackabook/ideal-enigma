@@ -8,8 +8,10 @@ on:
       - "tests/cryptic-atlas.test.mjs"
       - "tests/adam-repo-audit.test.mjs"
       - "tests/dualtrace.test.mjs"
+      - "tests/mission-funding.test.mjs"
       - "tools/adam/**"
       - "docs/CRYPTIC_ATLAS_CCA.md"
+      - "docs/CRYPTIC_ATLAS_MISSION_FUNDING.md"
       - "docs/ADAM_REPOSITORY_GOVERNANCE.md"
       - "docs/AE_SL6_DUALTRACE_4P.md"
       - "docs/QUANTUM_UNCLONEABILITY_RESEARCH.md"
@@ -23,8 +25,10 @@ on:
       - "tests/cryptic-atlas.test.mjs"
       - "tests/adam-repo-audit.test.mjs"
       - "tests/dualtrace.test.mjs"
+      - "tests/mission-funding.test.mjs"
       - "tools/adam/**"
       - "docs/CRYPTIC_ATLAS_CCA.md"
+      - "docs/CRYPTIC_ATLAS_MISSION_FUNDING.md"
       - "docs/ADAM_REPOSITORY_GOVERNANCE.md"
       - "docs/AE_SL6_DUALTRACE_4P.md"
       - "docs/QUANTUM_UNCLONEABILITY_RESEARCH.md"
@@ -51,12 +55,15 @@ jobs:
           node --check tools/adam/repo-audit.mjs
           node --check src/cryptic/unbound-inverse.mjs
           node --check src/cryptic/dualtrace.mjs
+          node --check src/cryptic/mission-funding.mjs
       - name: Atlas policy and HCCGN tests
         run: node --test tests/cryptic-atlas.test.mjs
       - name: ADAM Gate 0 repository audit tests
         run: node --test tests/adam-repo-audit.test.mjs
       - name: DUALTRACE and unbound inverse tests
         run: node --test tests/dualtrace.test.mjs
+      - name: Mission funding settlement and allocation tests
+        run: node --test tests/mission-funding.test.mjs
       - name: D1 migration schema
         run: |
           python3 - <<'PY'
