@@ -1,0 +1,12 @@
+PRAGMA foreign_keys = ON;
+CREATE TABLE IF NOT EXISTS atlas_ledger_head (id INTEGER PRIMARY KEY CHECK(id=1),event_seq INTEGER NOT NULL DEFAULT 0,event_hash TEXT NOT NULL DEFAULT '0000000000000000000000000000000000000000000000000000000000000000',block_height INTEGER NOT NULL DEFAULT 0,block_hash TEXT NOT NULL DEFAULT '0000000000000000000000000000000000000000000000000000000000000000');
+INSERT OR IGNORE INTO atlas_ledger_head(id) VALUES(1);
+CREATE TABLE IF NOT EXISTS atlas_run_lock (id INTEGER PRIMARY KEY CHECK(id=1),run_id TEXT NOT NULL,locked_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS atlas_manifests (manifest_hash TEXT PRIMARY KEY,manifest_id TEXT NOT NULL,manifest_json TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS atlas_runs (run_id TEXT PRIMARY KEY,trigger_type TEXT NOT NULL,manifest_id TEXT NOT NULL,manifest_hash TEXT NOT NULL,status TEXT NOT NULL,started_at TEXT NOT NULL,finished_at TEXT,block_height INTEGER,stride INTEGER,pages_seen INTEGER NOT NULL DEFAULT 0,pages_committed INTEGER NOT NULL DEFAULT 0,skips INTEGER NOT NULL DEFAULT 0,error_code TEXT);
+CREATE TABLE IF NOT EXISTS atlas_sources (source_id TEXT PRIMARY KEY,canonical_url TEXT NOT NULL,host TEXT NOT NULL,mission TEXT NOT NULL,source_type TEXT NOT NULL,license_status TEXT NOT NULL,title TEXT,content_sha256 TEXT NOT NULL,etag TEXT,last_modified TEXT,first_seen_at TEXT NOT NULL,last_seen_at TEXT NOT NULL,run_id TEXT NOT NULL,block_height INTEGER NOT NULL,stride_index INTEGER NOT NULL,parent_source_id TEXT,UNIQUE(canonical_url,content_sha256));
+CREATE INDEX IF NOT EXISTS atlas_sources_host_seen ON atlas_sources(host,last_seen_at);
+CREATE INDEX IF NOT EXISTS atlas_sources_mission_seen ON atlas_sources(mission,last_seen_at);
+CREATE TABLE IF NOT EXISTS atlas_events (event_seq INTEGER PRIMARY KEY,event_id TEXT NOT NULL UNIQUE,run_id TEXT NOT NULL,block_height INTEGER NOT NULL,event_type TEXT NOT NULL,source_id TEXT,parent_id TEXT,entry_id TEXT,created_at TEXT NOT NULL,prev_hash TEXT NOT NULL,event_hash TEXT NOT NULL,payload_json TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS atlas_skips (skip_id TEXT PRIMARY KEY,run_id TEXT NOT NULL,block_height INTEGER NOT NULL,stride_index INTEGER NOT NULL,target_url TEXT NOT NULL,reason TEXT NOT NULL,created_at TEXT NOT NULL);
+CREATE TABLE IF NOT EXISTS atlas_blocks (block_height INTEGER PRIMARY KEY,run_id TEXT NOT NULL UNIQUE,stride INTEGER NOT NULL,header TEXT NOT NULL,prev_hash TEXT NOT NULL,event_root TEXT NOT NULL,block_hash TEXT NOT NULL,created_at TEXT NOT NULL);
