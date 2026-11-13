@@ -1,0 +1,48 @@
+name: CRYPTIC Atlas CCA verification
+on:
+  push:
+    paths:
+      - "cloudflare/cryptic-atlas/**"
+      - "manifests/cryptic-atlas-search-manifest.json"
+      - "tests/cryptic-atlas.test.mjs"
+      - "docs/CRYPTIC_ATLAS_CCA.md"
+      - ".github/workflows/cryptic-atlas.yml"
+  pull_request:
+    paths:
+      - "cloudflare/cryptic-atlas/**"
+      - "manifests/cryptic-atlas-search-manifest.json"
+      - "tests/cryptic-atlas.test.mjs"
+      - "docs/CRYPTIC_ATLAS_CCA.md"
+      - ".github/workflows/cryptic-atlas.yml"
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  atlas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: JavaScript syntax
+        run: node --check cloudflare/cryptic-atlas/worker.mjs
+      - name: Atlas policy and HCCGN tests
+        run: node --test tests/cryptic-atlas.test.mjs
+      - name: D1 migration schema
+        run: |
+          python3 - <<'PY'
+          import pathlib, sqlite3
+          db = sqlite3.connect(":memory:")
+          db.executescript(pathlib.Path("cloudflare/cryptic-atlas/migrations/0001_init.sql").read_text())
+          names = {r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table'")}
+          required = {"atlas_ledger_head","atlas_run_lock","atlas_manifests","atlas_runs","atlas_sources","atlas_events","atlas_skips","atlas_blocks"}
+          assert required <= names, required - names
+          print("D1 migration schema OK:", len(required), "tables")
+          PY
+      - name: Search manifest validation
+        run: python3 -m json.tool manifests/cryptic-atlas-search-manifest.json > /dev/null
