@@ -186,6 +186,10 @@ Use browser Find or [GitHub code search](https://github.com/search?q=repo%3Amach
 Copyright: The Architect / Nexus / Cryptic News LLC / Project: The Nexus Generation: GaiaSSoul / SERIES: The Nexus of Gaia / ID: 137451921129154222|040592|433855274. Upstream layers retain their own notices. No blanket license for all Ghisler plugins is asserted.
 
 
+## Project source index — Hamiltonian Test / GAIA-NEXUS
+
+The [Project Source Index](./docs/PROJECT_SOURCE_INDEX.md) catalogs the supplied project specifications, their repository destinations, implementation status, unresolved source questions, and publication boundaries. It distinguishes received, read, implemented, tested, and deployed artifacts; it does not publish private access-control material or claim uninspected ZIP contents.
+
 ## CRYPTIC Atlas CCA — mission-directed public research
 
 **The promise:** preserve the original commitment, record every stride and skip, independently verify transformations, and measure positive outcomes. The Atlas adds a bounded HarvesterWebOmni Worker, HCCGN block lineage, a searchable mission manifest, CCA accessibility requirements, and a D1 provenance ledger. Its initial missions are food security, economic inclusion, resource coordination, accessibility, and public accountability.
