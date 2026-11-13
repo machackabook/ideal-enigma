@@ -7,7 +7,7 @@
 
 Atlas is oriented toward measurable public outcomes, not token price or speculative yield. The commitment is to publish what was collected, what was independently verified, what funding actually settled, how the allocation was calculated, and what outcome evidence followed.
 
-The six mission allocations are versioned policy weights:
+The six mission allocations below are **proposed starting weights**, not an adopted treasury mandate. They require explicit governance approval before any real disbursement. The implementation labels the policy status as `proposed` so a deterministic calculation cannot be mistaken for an approved funding commitment:
 
 | Mission | Allocation | Example outcome evidence |
 |---|---:|---|
