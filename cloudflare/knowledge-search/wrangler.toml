@@ -1,0 +1,13 @@
+name = "uniomni-public-search"
+main = "worker.mjs"
+compatibility_date = "2026-11-13"
+workers_dev = true
+account_id = "bc67ed84864df46b05d196cff28126bb"
+
+routes = [
+  { pattern = "crypticnews.org/uniomni*", zone_name = "crypticnews.org" }
+]
+
+[observability]
+enabled = true
+head_sampling_rate = 1
