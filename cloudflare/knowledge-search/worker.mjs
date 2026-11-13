@@ -141,8 +141,8 @@ const JSON_HEADERS = {
   "X-Robots-Tag": "noindex, nofollow"
 };
 
-function json(data, status = 200) {
-  return new Response(JSON.stringify(data), { status, headers: JSON_HEADERS });
+function json(data, status = 200, head = false) {
+  return new Response(head ? null : JSON.stringify(data), { status, headers: JSON_HEADERS });
 }
 
 function normalizedPath(pathname) {
@@ -335,8 +335,8 @@ body.visualize .topbar{opacity:1}
   resize(); window.addEventListener("resize",resize,{passive:true});
   if (reduced) draw(0); else frame = requestAnimationFrame(draw);
   document.addEventListener("visibilitychange",() => {
-    if (document.hidden && frame) cancelAnimationFrame(frame);
-    else if (!document.hidden && !reduced) frame = requestAnimationFrame(draw);
+    if (document.hidden && frame) { cancelAnimationFrame(frame); frame = 0; }
+    else if (!document.hidden && !reduced && !frame) frame = requestAnimationFrame(draw);
   });
 })();
 </script>
@@ -364,7 +364,7 @@ export default {
         private_memory_exposed: false,
         memory_bridge: "owner-authenticated-link-only",
         status: "ready"
-      });
+      }, 200, method === "HEAD");
     }
     if (path === "/api/index") {
       return json({
@@ -373,7 +373,7 @@ export default {
         private_memory_exposed: false,
         count: PUBLIC_INDEX.length,
         results: PUBLIC_INDEX
-      });
+      }, 200, method === "HEAD");
     }
     if (path === "/api/search") {
       const query = url.searchParams.get("q") || "";
@@ -386,7 +386,7 @@ export default {
         query,
         count: results.length,
         results
-      });
+      }, 200, method === "HEAD");
     }
     if (path !== "/" && path !== "/index.html") {
       return new Response("Not found", { status: 404, headers: JSON_HEADERS });
