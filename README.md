@@ -216,3 +216,18 @@ node tools/adam/repo-audit.mjs --repo-root . --write .adam/repository-audit.json
 ```
 
 Report writing is opt-in, confined to the repository, and does not overwrite an existing report unless `--force` is supplied. The audit is Gate 0 (OBSERVE); proposals, validation, and promotion remain separate gates. SHA-256 proves byte identity only, not authorship or truth.
+
+
+## AE.SL6.DUALTRACE.4P — pair-local inverse verification
+
+- [Four-lane DUALTRACE specification](./docs/AE_SL6_DUALTRACE_4P.md)
+- [Unbound inverse verifier](./src/cryptic/unbound-inverse.mjs)
+- [Four-lane contracts and pair validation](./src/cryptic/dualtrace.mjs)
+- [DUALTRACE test suite](./tests/dualtrace.test.mjs)
+
+The implementation checks supplied forward/inverse identities and validates independent lane tickets, pair metadata, signed polarity, and residual tolerance. It does not claim a scheduler, universal invertibility, or hardware execution.
+
+## Research and platform boundaries
+
+- [Quantum uncloneability research note](./docs/QUANTUM_UNCLONEABILITY_RESEARCH.md) — research-only; supplied excerpt is incomplete and does not define an implementable quantum-money protocol.
+- [AE.SOVEREIGN.OS / AE.AXS.POLYGLOT Phase 2 boundary](./docs/AE_SOVEREIGN_OS_PHASE2_BOUNDARY.md) — shared contracts and interface requirements; no bootable OS is claimed.
