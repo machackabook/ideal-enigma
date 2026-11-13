@@ -5,14 +5,20 @@ on:
       - "cloudflare/cryptic-atlas/**"
       - "manifests/cryptic-atlas-search-manifest.json"
       - "tests/cryptic-atlas.test.mjs"
+      - "tests/adam-repo-audit.test.mjs"
+      - "tools/adam/**"
       - "docs/CRYPTIC_ATLAS_CCA.md"
+      - "docs/ADAM_REPOSITORY_GOVERNANCE.md"
       - ".github/workflows/cryptic-atlas.yml"
   pull_request:
     paths:
       - "cloudflare/cryptic-atlas/**"
       - "manifests/cryptic-atlas-search-manifest.json"
       - "tests/cryptic-atlas.test.mjs"
+      - "tests/adam-repo-audit.test.mjs"
+      - "tools/adam/**"
       - "docs/CRYPTIC_ATLAS_CCA.md"
+      - "docs/ADAM_REPOSITORY_GOVERNANCE.md"
       - ".github/workflows/cryptic-atlas.yml"
   workflow_dispatch:
 permissions:
@@ -30,9 +36,13 @@ jobs:
         with:
           python-version: "3.11"
       - name: JavaScript syntax
-        run: node --check cloudflare/cryptic-atlas/worker.mjs
+        run: |
+          node --check cloudflare/cryptic-atlas/worker.mjs
+          node --check tools/adam/repo-audit.mjs
       - name: Atlas policy and HCCGN tests
         run: node --test tests/cryptic-atlas.test.mjs
+      - name: ADAM Gate 0 repository audit tests
+        run: node --test tests/adam-repo-audit.test.mjs
       - name: D1 migration schema
         run: |
           python3 - <<'PY'
