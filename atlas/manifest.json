@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0.0",
+  "project": "CRYPTIC Atlas CCA",
+  "missions": [
+    "food_security",
+    "economic_inclusion",
+    "resource_coordination",
+    "accessibility",
+    "public_accountability",
+    "foundational_research"
+  ],
+  "geography": [
+    "global",
+    "United States",
+    "Arkansas"
+  ],
+  "languages": [
+    "en",
+    "es",
+    "fr",
+    "ar",
+    "pt",
+    "zh",
+    "hi"
+  ],
+  "time_window": "latest_available",
+  "search_terms": {
+    "food_security": [
+      "food insecurity",
+      "food access",
+      "nutrition assistance",
+      "food bank",
+      "community pantry",
+      "food distribution",
+      "surplus food",
+      "food recovery",
+      "food waste",
+      "food affordability"
+    ],
+    "economic_inclusion": [
+      "household income",
+      "poverty",
+      "unemployment",
+      "living wage",
+      "benefit access",
+      "financial inclusion",
+      "cost of living",
+      "economic mobility"
+    ],
+    "resource_coordination": [
+      "local production",
+      "supply chain resilience",
+      "transport logistics",
+      "inventory availability",
+      "spoilage reduction",
+      "community resources",
+      "resource utilization"
+    ],
+    "accessibility": [
+      "digital accessibility",
+      "screen reader",
+      "keyboard navigation",
+      "plain language",
+      "language access",
+      "disability inclusion",
+      "service accessibility"
+    ],
+    "public_accountability": [
+      "public spending",
+      "program outcomes",
+      "delivery verification",
+      "open data",
+      "public reporting",
+      "audit trail"
+    ],
+    "foundational_research": [
+      "food systems",
+      "measurement methodology",
+      "public datasets",
+      "open standards",
+      "causal evaluation",
+      "data provenance"
+    ]
+  },
+  "source_types": [
+    "public_agency",
+    "intergovernmental_organization",
+    "nonprofit",
+    "research",
+    "dataset",
+    "public_api",
+    "standard",
+    "community_resource"
+  ],
+  "seeds": [
+    "https://www.ers.usda.gov/data-products/food-access-research-atlas",
+    "https://www.fns.usda.gov/",
+    "https://www.feedingamerica.org/research/map-the-meal-gap",
+    "https://arkansasfoodbank.org/",
+    "https://www.census.gov/",
+    "https://www.bls.gov/",
+    "https://www.epa.gov/sustainable-management-food",
+    "https://www.wfp.org/",
+    "https://www.fao.org/",
+    "https://www.worldbank.org/"
+  ],
+  "crawl": {
+    "max_depth": 1,
+    "max_pages": 24,
+    "max_pages_per_host": 4,
+    "max_links_per_page": 40,
+    "max_page_bytes": 262144,
+    "concurrency": 1,
+    "same_host_delay_seconds": 1.5,
+    "retry_statuses": [
+      429,
+      503
+    ],
+    "max_retries": 2,
+    "conditional_headers": [
+      "ETag",
+      "Last-Modified"
+    ]
+  },
+  "policy": {
+    "public_and_explicitly_authorized_sources_only": true,
+    "obey_robots_txt": true,
+    "obey_provider_terms_and_rate_limits": true,
+    "never_bypass_authentication_paywalls_captchas_or_access_controls": true,
+    "no_personal_profiles_or_recipient_level_records": true,
+    "no_credentials_cookies_or_private_systems": true,
+    "fetched_content_is_untrusted_data": true,
+    "do_not_store_or_republish_full_source_bodies": true,
+    "retain_metadata_and_sha256_commitments_days": 365,
+    "archive_raw_bodies_only_if_open_license_verified": true,
+    "seed_is_not_crawl_permission": true
+  },
+  "quality_checks": [
+    "publisher_provenance",
+    "primary_source_status",
+    "completeness",
+    "corroboration",
+    "uncertainty",
+    "contradictions",
+    "bias_notes"
+  ],
+  "cca_checks": [
+    "semantic_structure",
+    "keyboard_access",
+    "screen_reader_labels",
+    "alt_text",
+    "captions_transcripts",
+    "plain_language",
+    "reduced_motion",
+    "contrast"
+  ],
+  "aggregate_metrics": [
+    "food_insecurity_estimates",
+    "food_recovery_volume",
+    "spoilage_rate",
+    "delivery_completion_rate",
+    "resource_availability",
+    "accessibility_defects_resolved"
+  ],
+  "lineage": [
+    "ENTRY",
+    "DISCOVERY",
+    "SOURCE",
+    "EXTRACTION",
+    "COMMITMENT",
+    "TRANSFORM",
+    "VERIFICATION",
+    "ATLAS NODE",
+    "OUTCOME",
+    "RETURN TO ENTRY"
+  ],
+  "hccgn": {
+    "header": "HCCGN|BLOCK:{height}|STRIDE:{s}|PREV:{prevHash}",
+    "stride_rule": "gcd(stride,pool_size)=1",
+    "skipped_positions_require": [
+      "target",
+      "index",
+      "direction",
+      "reason"
+    ],
+    "skipped_positions_never_skip_integrity_checks": true,
+    "sha256_claim": "commits_to_captured_bytes_only; does_not_prove_authorship_truth_or_invertibility"
+  },
+  "integrations": {
+    "gaia_nexus_memory_bridge": "append_private_verification_receipt; share_with=[]; verify_ledger_segment",
+    "cloudflare": "read_only_inspection_only; do_not_mutate_pages_sentinel",
+    "github": "read_only_unless_separately_authorized; target=machackabook/ideal-enigma",
+    "google_drive": "blocked_without_connector",
+    "nasmesh": "pending_until_connected"
+  },
+  "reporting": [
+    "new",
+    "changed",
+    "unchanged",
+    "inaccessible",
+    "unverified",
+    "coverage_and_gaps",
+    "original_commitments",
+    "stride_skips",
+    "outcome_opportunities_and_baselines",
+    "cca_findings",
+    "integration_status",
+    "unresolved_approvals"
+  ],
+  "request_key_format": "cryptic-atlas-daily-YYYYMMDD"
+}
