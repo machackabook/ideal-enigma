@@ -18,6 +18,15 @@
     {"title":"Pipeline architecture synthesis","file":"Pipeline architecture synthesis.txt","role":"historical archive lineage correction; ZIP contents not established"},
     {"title":"GAIA NEXUS Secure Framework Compendium vΘ GENESIS+","file":"GAIA_NEXUS_SECURE_FRAMEWORK_COMPENDIUM_vΘ_GENESIS_plus (2).docx","role":"Remedy Engine, secure network framework and GENESIS+ roadmap"}
   ],
+  "historical_archives": [
+    {"name":"GAIA_NEXUS_GEOMETRIC_SINGULARITY_v2.0.0_ORCHBENCH.zip","status":"historical-record-only; not inspected"},
+    {"name":"GAIA_HYPERTERMINAL_GEMINI_EVOLUTION_v2.0.0_ORCHBENCH.zip","status":"historical-record-only; not inspected"},
+    {"name":"GAIA_NEXUS_SINGULARITY_AE-M4_TDOC0036.zip","status":"historical-record-only; not inspected"},
+    {"name":"GAIA_NEXUS_CRYPTIC_AE-M5_TDOC0037.zip","status":"historical-record-only; not inspected"},
+    {"name":"NEXUS_ANIMUS_D3_THREE_v1.0.zip","status":"historical-record-only; not inspected"},
+    {"name":"NEXUS_GAIA_RAVENDESK_HYPERTERMINAL_v2.zip","status":"historical-record-only; not inspected"},
+    {"name":"untitled.zip","status":"uploaded-reference-not-readable-in-current-runtime; contents unknown"}
+  ],
   "literature": [
     {"id":"2606.03161","title":"OpenAgenet / OAN White Paper","url":"https://arxiv.org/abs/2606.03161","role":"trusted resource identity and discovery"},
     {"id":"2605.11032","title":"Portable Agent Memory","url":"https://arxiv.org/abs/2605.11032","role":"scoped memory transfer and provenance"},

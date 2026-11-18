@@ -4,11 +4,11 @@
 
 ## Abstract
 
-The earlier computational-runtime, AXS, inverse-verification and multi-network notes add important foundations to the research series. They also contain explicit cautions: a route key is not a cryptographic secret, a reversible ARX state transition is not a hash, and example protocol coverage is not implemented support.
+The computational-runtime, AXS, inverse-verification and multi-protocol notes add important foundations. They also contain explicit cautions: a route key is not a cryptographic secret, a reversible ARX state transition is not a hash, and example protocol coverage is not implemented support.
 
 ## 1. AE.MINERVA.UNBOUND.INVERSE
 
-The Inversion Proof Summary specifies a generic injected operator contract:
+The Inversion Proof Summary specifies an injected operator contract:
 
 \[
 Y \xrightarrow{F^{-1}} X \xrightarrow{F} \widehat{Y}
@@ -34,7 +34,7 @@ and:
 \forall x\in D,\ F^{-1}(F(x))=x.
 \]
 
-A successful right-inverse check for selected samples does not establish a bijection over the full domain. Preserve mismatch receipts and exceptions; do not replace them with a generic “pass”.
+A successful right-inverse check for selected samples does not establish a bijection over the full domain. Preserve mismatch receipts and exceptions; do not replace them with a generic pass.
 
 ## 2. ARX diagnostics are not cryptographic authentication
 
@@ -59,9 +59,9 @@ The factorization and totient describe different things:
 - AXS route: a chosen ordered pool, origin and coprime stride.
 - Modular inverse: the inverse of a specific element or index, when it exists.
 
-The factor 23 is not automatically a 23rd-position marker. Any such role must be explicitly mapped. The arithmetic tuple is a reproducible route-and-verification key, not a cryptographic secret and not a hash preimage method.
+The factor 23 is not automatically a 23rd-position marker. Any such role must be explicitly mapped. The arithmetic tuple is a reproducible route-and-verification key, not a cryptographic secret and not a hash-preimage method.
 
-The source's 33⅓%, 66⅔% and terminal interlocks are useful checkpoints. A checkpoint may avoid redundant traversal, but may not bypass a required integrity check. Even/odd compute-versus-verify roles and repeated diagnostic markers are conventions, not proof. The source recommends full BLAKE2b digests and authenticated Merkle receipts for the actual evidence.
+The source's 33⅓%, 66⅔% and terminal interlocks are useful checkpoints. A checkpoint may avoid redundant traversal, but may not bypass a required integrity check. Even/odd compute-versus-verify roles and repeated diagnostic markers are conventions, not proof. The source recommends full BLAKE2b digests and authenticated Merkle receipts for actual evidence.
 
 ## 4. Calculus, cinematic runtime and telemetry
 
@@ -84,7 +84,7 @@ The Valuate Ancestry Solver source proposes one shared computation and receipt e
 
 Its named network examples are illustrative coverage goals, not verified implementations. The source itself states that examples do not establish protocol support. No hashrate, profitability, reward or payout claim follows from this architecture.
 
-A valid adapter must specify its consensus rules, input format, hashing or validation algorithm, target/acceptance rule, independent verification and receipt schema before it can be labelled implemented.
+A valid adapter must specify its consensus rules, input format, algorithm, acceptance rule, independent verification and receipt schema before it can be labelled implemented.
 
 ## 6. RSA-style exponent question remains unresolved
 
@@ -95,15 +95,26 @@ d=e^{-1}\pmod{\lambda(n)},\qquad
 \lambda(n)=\operatorname{lcm}(p-1,q-1).
 \]
 
-The source explicitly lacks the required modulus or factor values. Therefore no inverse value is established by that note. The necessary condition is \(\gcd(65,537,\lambda(n))=1\). This research records the question as incomplete and does not infer missing factors or a private key.
+The source lacks the required modulus or factor values. Therefore no inverse value is established by that note. The necessary condition is \(\gcd(65,537,\lambda(n))=1\). This research records the question as incomplete and does not infer missing factors or a private key.
 
-## 7. Archive lineage caution
+## 7. Historical archive lineage
 
-The Pipeline Architecture Synthesis source corrects an earlier overstatement: historical ZIP names and conversation records do not prove that the archives contain the described components. The actual uploaded untitled.zip was not readable in the active file runtime during this review. Its contents remain uninspected; no archive contents are attributed to it.
+The Pipeline Architecture Synthesis note records six historical archive names and recommends preserving their lineage separately:
+
+| Archive name in conversation history | Recorded lineage role | Evidence status |
+|---|---|---|
+| GAIA_NEXUS_GEOMETRIC_SINGULARITY_v2.0.0_ORCHBENCH.zip | HTML engine, WebGL2, Canvas2D fallback, seven-galaxy architecture, Memory Fabric and terminal | Historical record; archive not inspected here |
+| GAIA_HYPERTERMINAL_GEMINI_EVOLUTION_v2.0.0_ORCHBENCH.zip | React/TypeScript, Three.js renderer, terminal and virtual filesystem | Historical record; archive not inspected here |
+| GAIA_NEXUS_SINGULARITY_AE-M4_TDOC0036.zip | Adaptive WebGL2, Singularity compiler, source catalog, manifest loader and GLSL compilation | Historical record; recommended primary creation-engine lineage |
+| GAIA_NEXUS_CRYPTIC_AE-M5_TDOC0037.zip | Adaptive rendering, HyperTerminal, compute workers and proof-engine integration | Historical record; recommended integration lineage |
+| NEXUS_ANIMUS_D3_THREE_v1.0.zip | Three.js shard field, D3 graph, shard ingestion and SHA-256 | Historical record; archive not inspected here |
+| NEXUS_GAIA_RAVENDESK_HYPERTERMINAL_v2.zip | Geometric core, D3 graph, shard ingestion and WebSocket adapter | Historical record; recommended visualization lineage |
+
+These names and descriptions come from conversation-history records, not a fresh inspection of the ZIP contents. The uploaded untitled.zip was not readable in the active file runtime during this review. Its contents remain unknown; no component is attributed to it.
 
 ## Conclusion
 
-The reusable foundation is a set of narrow, independently testable operators and adapters. Preserve the exact domain of every inverse, keep diagnostic transforms separate from authentication, and label protocol support only after real tests.
+The reusable foundation is a set of narrow, independently testable operators and adapters. Preserve each inverse's exact domain, keep diagnostic transforms separate from authentication, and label protocol support only after real tests.
 
 ## Project-source lineage
 
