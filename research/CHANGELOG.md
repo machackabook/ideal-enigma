@@ -1,0 +1,9 @@
+# Research Changelog
+
+## 2026-11-18 — Edition 1.0.0
+- Created the public GAIA / NEXUS / CRYPTIC living research series.
+- Unified system ownership, page topology and trust boundaries.
+- Added literature synthesis for OAN, SMCP, portable agent memory, secure A2A, event sourcing and causal-temporal traces.
+- Formalized modular traversal, four-lane verification, geometric inversion, SHA-256 limits, QC-LDPC, Hamiltonian integration and Oracle Clock boundaries.
+- Added provenance, evidence labels, reproducibility rules and integration gates.
+- Recorded pending agent pairing, CI and live endpoint checks without claiming completion.
