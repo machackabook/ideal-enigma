@@ -1,0 +1,53 @@
+{
+  "schema": "gaia-nexus-living-research-sources/v1",
+  "edition": "1.1.0",
+  "research_cut": "2026-11-18",
+  "project_sources": [
+    {"title":"Universal Polyglot Architecture","file":"Universal Polyglot Architecture.txt","role":"AXS kernel, native dispatch, shared mathematics and package federation"},
+    {"title":"Reversible Transformation Proof (2)","file":"Reversible Transformation Proof (2).txt","role":"geometric inversion and round-trip verification"},
+    {"title":"Discuss Stride Skips","file":"Discuss Stride Skips.txt","role":"coprime pool, stride constraints and forward/reverse indexing"},
+    {"title":"Initramfs Configuration Analysis (1)","file":"Initramfs Configuration Analysis (1).txt","role":"four-lane tickets, cursors and checkpoints"},
+    {"title":"Pipeline architecture synthesis (1)","file":"Pipeline architecture synthesis (1).txt","role":"adaptive allocation and pipeline scheduling"},
+    {"title":"Pipeline architecture synthesis (3)","file":"Pipeline architecture synthesis (3).txt","role":"resource budgets, seed reuse and convergence"},
+    {"title":"Continue AI Studio Project","file":"Continue AI Studio Project.txt","role":"factor signature, totient route, AXS inverse and checkpoint discipline"},
+    {"title":"Continue AI Studio Project (2)","file":"Continue AI Studio Project (2).txt","role":"shared contracts, manifests and module boundaries"},
+    {"title":"Inversion proof summary (1)","file":"Inversion proof summary (1).txt","role":"AE.MINERVA.UNBOUND.INVERSE and right/left inverse guarantees"},
+    {"title":"EPUB Forge & Launcher","file":"EPUB Forge & Launcher.txt","role":"calculus/cinematic runtime, telemetry and ARX-versus-hash boundary"},
+    {"title":"Branch · Valuate Ancestry Solver (3) (1)","file":"Branch · Valuate Ancestry Solver (3) (1).txt","role":"proposed multi-protocol compute and consensus adapter taxonomy"},
+    {"title":"Reconstruct untitled zip (1)","file":"Reconstruct untitled zip (1).txt","role":"unresolved RSA-style exponent question; required modulus absent"},
+    {"title":"Pipeline architecture synthesis","file":"Pipeline architecture synthesis.txt","role":"historical archive lineage correction; ZIP contents not established"},
+    {"title":"GAIA NEXUS Secure Framework Compendium vΘ GENESIS+","file":"GAIA_NEXUS_SECURE_FRAMEWORK_COMPENDIUM_vΘ_GENESIS_plus (2).docx","role":"Remedy Engine, secure network framework and GENESIS+ roadmap"}
+  ],
+  "historical_archives": [
+    {"name":"GAIA_NEXUS_GEOMETRIC_SINGULARITY_v2.0.0_ORCHBENCH.zip","status":"historical-record-only; not inspected"},
+    {"name":"GAIA_HYPERTERMINAL_GEMINI_EVOLUTION_v2.0.0_ORCHBENCH.zip","status":"historical-record-only; not inspected"},
+    {"name":"GAIA_NEXUS_SINGULARITY_AE-M4_TDOC0036.zip","status":"historical-record-only; not inspected"},
+    {"name":"GAIA_NEXUS_CRYPTIC_AE-M5_TDOC0037.zip","status":"historical-record-only; not inspected"},
+    {"name":"NEXUS_ANIMUS_D3_THREE_v1.0.zip","status":"historical-record-only; not inspected"},
+    {"name":"NEXUS_GAIA_RAVENDESK_HYPERTERMINAL_v2.zip","status":"historical-record-only; not inspected"},
+    {"name":"untitled.zip","status":"uploaded-reference-not-readable-in-current-runtime; contents unknown"}
+  ],
+  "literature": [
+    {"id":"2606.03161","title":"OpenAgenet / OAN White Paper","url":"https://arxiv.org/abs/2606.03161","role":"trusted resource identity and discovery"},
+    {"id":"2605.11032","title":"Portable Agent Memory","url":"https://arxiv.org/abs/2605.11032","role":"scoped memory transfer and provenance"},
+    {"id":"2602.01129","title":"SMCP: Secure Model Context Protocol","url":"https://arxiv.org/abs/2602.01129","role":"MCP identity, policy and audit"},
+    {"id":"2610.23078","title":"Cryptographically Secure Agent-to-Agent Communication","url":"https://arxiv.org/abs/2610.23078","role":"zero-trust agent messaging"},
+    {"id":"2602.23193","title":"ESAA: Event Sourcing for Autonomous Agents","url":"https://arxiv.org/abs/2602.23193","role":"event-sourced execution"},
+    {"id":"2604.17557","title":"Causal-Temporal Event Graphs","url":"https://arxiv.org/abs/2604.17557","role":"causal trace lineage"},
+    {"id":"2601.10170","title":"Girth-8 QC-LDPC constructions","url":"https://arxiv.org/abs/2601.10170","role":"QC-LDPC construction"},
+    {"id":"2611.00512","title":"Practical Preimages for 19- and 20-Step SHA-256","url":"https://arxiv.org/abs/2611.00512","role":"reduced-round preimages; not full SHA-256 inversion"},
+    {"id":"2604.19272","title":"Symplectic Error of Implicit Symplectic Integrators","url":"https://arxiv.org/abs/2604.19272","role":"numerical symplecticity defects"},
+    {"id":"2607.02694","title":"Variational Integrators Using Forced Discrete Hamiltonian Systems","url":"https://arxiv.org/abs/2607.02694","role":"variational integration"},
+    {"id":"2609.21162","title":"AI-Driven Scientific Computing Workflows","url":"https://arxiv.org/abs/2609.21162","role":"workflow orchestration and provenance"},
+    {"id":"2604.25944","title":"From Code to Figure: FAIR-Aligned Data Provenance","url":"https://arxiv.org/abs/2604.25944","role":"source-to-figure provenance"}
+  ],
+  "status": {
+    "papers_added_to_alphaxiv_library": 12,
+    "source_prs_merged_by_this_change": false,
+    "cloudflare_deployment_performed": false,
+    "agent_pairing_verified": false,
+    "full_mesh_round_trip_verified": false,
+    "public_http_reachability_verified": false,
+    "untitled_zip_inspected": false
+  }
+}
