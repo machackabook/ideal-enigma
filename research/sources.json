@@ -1,14 +1,21 @@
 {
   "schema": "gaia-nexus-living-research-sources/v1",
-  "edition": "1.0.0",
+  "edition": "1.1.0",
   "research_cut": "2026-11-18",
   "project_sources": [
     {"title":"Universal Polyglot Architecture","file":"Universal Polyglot Architecture.txt","role":"AXS kernel, native dispatch, shared mathematics and package federation"},
     {"title":"Reversible Transformation Proof (2)","file":"Reversible Transformation Proof (2).txt","role":"geometric inversion and round-trip verification"},
     {"title":"Discuss Stride Skips","file":"Discuss Stride Skips.txt","role":"coprime pool, stride constraints and forward/reverse indexing"},
     {"title":"Initramfs Configuration Analysis (1)","file":"Initramfs Configuration Analysis (1).txt","role":"four-lane tickets, cursors and checkpoints"},
-    {"title":"Pipeline architecture synthesis (3)","file":"Pipeline architecture synthesis (3).txt","role":"adaptive allocation, resource budgets and convergence"},
+    {"title":"Pipeline architecture synthesis (1)","file":"Pipeline architecture synthesis (1).txt","role":"adaptive allocation and pipeline scheduling"},
+    {"title":"Pipeline architecture synthesis (3)","file":"Pipeline architecture synthesis (3).txt","role":"resource budgets, seed reuse and convergence"},
+    {"title":"Continue AI Studio Project","file":"Continue AI Studio Project.txt","role":"factor signature, totient route, AXS inverse and checkpoint discipline"},
     {"title":"Continue AI Studio Project (2)","file":"Continue AI Studio Project (2).txt","role":"shared contracts, manifests and module boundaries"},
+    {"title":"Inversion proof summary (1)","file":"Inversion proof summary (1).txt","role":"AE.MINERVA.UNBOUND.INVERSE and right/left inverse guarantees"},
+    {"title":"EPUB Forge & Launcher","file":"EPUB Forge & Launcher.txt","role":"calculus/cinematic runtime, telemetry and ARX-versus-hash boundary"},
+    {"title":"Branch · Valuate Ancestry Solver (3) (1)","file":"Branch · Valuate Ancestry Solver (3) (1).txt","role":"proposed multi-protocol compute and consensus adapter taxonomy"},
+    {"title":"Reconstruct untitled zip (1)","file":"Reconstruct untitled zip (1).txt","role":"unresolved RSA-style exponent question; required modulus absent"},
+    {"title":"Pipeline architecture synthesis","file":"Pipeline architecture synthesis.txt","role":"historical archive lineage correction; ZIP contents not established"},
     {"title":"GAIA NEXUS Secure Framework Compendium vΘ GENESIS+","file":"GAIA_NEXUS_SECURE_FRAMEWORK_COMPENDIUM_vΘ_GENESIS_plus (2).docx","role":"Remedy Engine, secure network framework and GENESIS+ roadmap"}
   ],
   "literature": [
@@ -31,6 +38,7 @@
     "cloudflare_deployment_performed": false,
     "agent_pairing_verified": false,
     "full_mesh_round_trip_verified": false,
-    "public_http_reachability_verified": false
+    "public_http_reachability_verified": false,
+    "untitled_zip_inspected": false
   }
 }

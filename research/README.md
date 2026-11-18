@@ -1,6 +1,6 @@
 # GAIA · NEXUS · CRYPTIC — Living Research Series
 
-**Edition 1.0.0 · Research cut 2026-11-18 · Status: literature synthesis and architecture proposal**
+**Edition 1.1.0 · Research cut 2026-11-18 · Literature synthesis and architecture proposal**
 
 This public research index unifies the GAIA/NEXUS/CRYPTIC source foundations with current literature. It does not publish private S.O.S source, private GAIA memory, credentials, agent secrets or device telemetry.
 
@@ -9,8 +9,9 @@ This public research index unifies the GAIA/NEXUS/CRYPTIC source foundations wit
 2. [Secure Mesh, Agent Identity and Portable Memory](./02-secure-mesh-memory-and-identity.md)
 3. [Mathematical Foundations and Proof Boundaries](./03-mathematical-foundations-and-proof-boundaries.md)
 4. [Provenance and Integration Roadmap](./04-provenance-and-integration-roadmap.md)
-5. [Source Manifest](./sources.json)
-6. [Changelog](./CHANGELOG.md)
+5. [Polyglot Compute and Unbound Inverse Verification](./05-polyglot-compute-and-unbound-inverse.md)
+6. [Source Manifest](./sources.json)
+7. [Changelog](./CHANGELOG.md)
 
 ## Interwoven destinations
 - [S.O.S public entry](https://sos.crypticnews.org/)
